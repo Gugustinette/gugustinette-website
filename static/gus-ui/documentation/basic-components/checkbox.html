@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Checkbox</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Basic Component - Checkbox</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Checkbox is a state component which can be checked or not.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Checkbox is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-checkbox></gus-checkbox>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Checkbox has 2 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        checked (Boolean): tells if the checkbox is checked or not
+                        <br>
+                        content (String): standard text to display beside the checkbox
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Checkbox has 2 part to customize :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        checkbox : correspond to the checkbox itself
+                        <br>
+                        checkbox-content : correspond to the text displaying below the checkbox (if any)
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Checkbox doesn't have any slot.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Button doesn't have any specific event to handle.</h5>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

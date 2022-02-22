@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus Univ</title>
+
+    <script type="module" src="./node_modules/gus-ui/gus_ui.js"></script>
+
+    <link rel="stylesheet" href="./content/css/index.css">
+    <link rel="stylesheet" href="./content/css/gus-edt.css">
+    <link rel="stylesheet" href="./content/css/gus-mail.css">
+    <link rel="stylesheet" href="./content/css/gus-notes.css">
+    <link rel="stylesheet" href="./content/css/settings.css">
+    <link rel="stylesheet" href="./content/css/loading.css">
+    <link rel="stylesheet" href="./content/css/connexion.css">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <script type="module" src="./node_modules/ics-to-json/icsToJson.js"></script>
+
+    <meta name="HandheldFriendly" content="true" />
+    
+    <meta name="theme-color" content="white"/>
+
+    <link rel="icon" href="./content/ico/favicon.ico" type="image/x-icon" />  
+    <link rel="apple-touch-icon" href="./content/ico/152.png">
+    <meta name="theme-color" content="white"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+    <meta name="apple-mobile-web-app-title" content="Hello World"> 
+    <meta name="msapplication-TileImage" content="./content/ico/144.png">  
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <link rel="manifest" href="./manifest.json">
+
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+</head>
+<body>
+    <ons-gesture-detector>
+        <gus-ui mode="dark">
+
+            <gus-focus-window id="panel-loading-global">
+                <gus-loading-circle infinite="true"></gus-loading-circle>
+            </gus-focus-window>
+
+            <gus-section-slider id="section-slider" inverted="false" sections='[
+            {"title": ""},
+            {"title": ""}
+            ]'>
+
+            <div slot="section_1" class="gus-ui-panel">         
+
+                <div class="panel">
+                    <div class="panel-top">
+                        <gus-title>Gus Edt</gus-title>
+                    </div>
+        
+                    <div class="panel-sub">
+                        <div class="panel-sub-left">
+                            <gus-paragraph id="panel-group">INFO 2 Groupe 2</gus-paragraph>
+                            <gus-paragraph id="panel-week">Semaine 36</gus-paragraph>
+                            <gus-paragraph id="panel-hour">Total heures : 00h 00min</gus-paragraph>
+        
+                            <div class="button-holder">
+                                <div>
+                                    <gus-button content="Semaine précédente" id="button-previous-week"></gus-button>
+                                    <gus-button content="Semaine suivante" id="button-next-week"></gus-button>
+                                </div>
+    
+                                <div>
+                                    <gus-button content="Jour précédent" class="button-mobile" id="button-previous-day"></gus-button>
+                                    <gus-button content="Jour suivant" class="button-mobile" id="button-next-day"></gus-button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-sub-right">
+                            <gus-combobox id="combobox-groups" content='[
+                            "INFO 2 Groupe 1",
+                            "INFO 2 Groupe 2",
+                            "INFO 2 Groupe 3",
+                            "INFO 2 Groupe 4",
+                            "INFO 2 Groupe Alternant",
+                            "INFO 1 TP 1-1",
+                            "INFO 1 TP 1-2",
+                            "INFO 1 TP 2-1",
+                            "INFO 1 TP 2-2",
+                            "INFO 1 TP 3-1",
+                            "INFO 1 TP 3-2",
+                            "INFO 1 TP 4-1",
+                            "INFO 1 TP 4-2"
+                            ]' default-value="INFO 2 Groupe 2"></gus-combobox>
+                        </div>
+                    </div>
+
+                </div>
+        
+                <gus-timetable class="timetable" cell-height="55" hours='[
+                    "8h", "9h", "10h", "11h", "12h", "13h", "14h", "15h", "16h", "17h", "18h"
+                ]'></gus-timetable>
+
+                <gus-focus-window class="panel-loading" id="panel-loading-edt">
+                    <gus-loading-circle infinite="true"></gus-loading-circle>
+                </gus-focus-window>
+            </div>
+
+            <div slot="section_2" class="gus-ui-panel">
+                <div class="settings-panel">
+                    <gus-box>
+                        <gus-title>Options</gus-title>
+                        <hr style="width: 85vw;">
+                    </gus-box>
+
+                    <div class="settings-title">
+                        <gus-paragraph>Général</gus-paragraph>
+                        <hr>
+                    </div>
+
+                    <div class="settings-option">
+                        <gus-paragraph>Light Mode</gus-paragraph>
+                        <div>
+                            <gus-switch id="settings-option-light-mode"></gus-switch>
+                        </div>
+                    </div>
+                    <div class="settings-option">
+                        <gus-paragraph>Couleur de l'interface</gus-paragraph>
+                        <div>
+                            <input type="color" id="settings-option-ui-color">
+                        </div>
+                    </div>
+                    <div class="settings-option">
+                        <gus-paragraph>Reset configuration</gus-paragraph>
+                        <div>
+                            <gus-button id="settings-option-reset-config" content="Reset"></gus-button>
+                        </div>
+                    </div>
+                    <div class="settings-option">
+                        <gus-paragraph>Hard Reload</gus-paragraph>
+                        <div>
+                            <gus-button id="settings-option-hard-reload" content="Reload"></gus-button>
+                        </div>
+                    </div>
+
+                    <div class="settings-title">
+                        <gus-paragraph>Edt</gus-paragraph>
+                        <hr>
+                    </div>
+                    <div class="settings-option">
+                        <gus-paragraph>Afficher bouton jour suivant sur mobile</gus-paragraph>
+                        <div>
+                            <gus-switch id="settings-option-show-nextday-mobile"></gus-switch>
+                        </div>
+                    </div>
+                    <div class="settings-option-big">
+                        <gus-paragraph>Ne pas afficher certains cours</gus-paragraph>
+                        <gus-paragraph class="min-text">(Recharger la page pour appliquer les changements)</gus-paragraph>
+                        <div class="wrapper">
+                            <gus-chips-list id="settings-option-edt-hide-courses-chips">
+                            </gus-chips-list>
+                            <div class="input-wrapper">
+                                <gus-text-field id="settings-option-edt-hide-courses"></gus-text-field>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-option" id="offset-option">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div slot="slider_button_content_1" class="gus-ui-nav-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 20h-4v-4h4v4zm-6-10h-4v4h4v-4zm6 0h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4zm-6-6h-4v4h4v-4zm16-8v22h-24v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h10v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 6h-20v14h20v-14zm-2-7c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-14 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2z"/></svg>
+            </div>
+
+            <div slot="slider_button_content_2" class="gus-ui-nav-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"/></svg>
+            </div>
+
+            </gus-section-slider>
+            
+        </gus-ui>
+    </ons-gesture-detector>
+
+    <script type="module" src="./content/js/index.js"></script>
+    <script type="module" src="./content/js/gus-edt.js"></script>
+    <script type="module" src="./content/js/settings.js"></script>
+</body>
+</html>

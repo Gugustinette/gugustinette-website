@@ -1,0 +1,176 @@
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+.section-index {
+    min-height: 600px;
+    height: 90vh;
+
+    background: url(../assets/img/section-index-background.png);
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: solid 1px var(--primary-color);
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.section-index div {
+    margin-bottom: 200px;
+}
+
+.section-index h1 {
+    text-align: center;
+    position: relative;
+}
+
+.section-index h3 {
+    font-family: 'Dancing Script';
+    text-align: center;
+    position: relative;
+}
+
+.section-index h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background: var(--background-color);
+
+    animation: typewriter 1s 300ms ease forwards;
+}
+
+
+
+
+
+
+
+
+
+.section-doc {
+    min-height: 500px;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.section-doc-buttons {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    column-gap: 20px;
+
+    min-height: 300px;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-doc-buttons a {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    grid-template-columns: 1fr 3fr;
+
+    min-height: 100px;
+    min-width: 250px;
+
+    position: relative;
+
+    width: 40vw;
+
+    border: solid 1px var(--tertiary-color);
+    border-radius: 20px;
+
+    transition: 0.2s;
+
+    color: var(--font-color);
+}
+
+.section-doc-buttons a img {
+    width: 40px;
+}
+
+.section-doc-buttons a h4 {
+    margin-right: 80px;
+}
+
+.section-doc-buttons a:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+#documentation {
+    border: solid 1px var(--secondary-color);
+}
+
+.section-doc-link {
+    margin-top: 10px;
+    color: var(--font-color);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.section-overview {
+    min-height: 500px;
+    height: 80vh;
+
+    display: grid;
+    justify-items: center;
+}
+
+.section-overview div {
+    width: 90%;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.section-overview hr {
+    width: 50%;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-aspect-ratio: 9/9) {
+    .section-index {
+        height: 100vh;
+    }
+    
+    .section-doc-buttons {
+        row-gap: 10vh;
+        grid-template-columns: 1fr;
+    }
+
+    .section-doc-buttons a {
+        min-width: 80vw;
+    }
+}

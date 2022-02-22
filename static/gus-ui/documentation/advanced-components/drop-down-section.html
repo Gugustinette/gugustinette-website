@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Drop Down Section</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Advanced Component - Drop Down Section</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Drop Down Section is a placement component that is used to show the elements inside only when clicking on it.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Drop Down Section is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-drop-down-section></gus-drop-down-section>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Drop Down Section has 1 attribute :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        content (String): correspond to the text written in the section
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Drop Down Section has 5 parts to customize :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        drop-down-section: correspond to the whole section itself
+                        <br>
+                        drop-down-section-title: correspond to the area displaying permanently with the title and arrow
+                        <br>
+                        drop-down-section-title-text: correspond to the title of the section
+                        <br>
+                        drop-down-section-title-arrow: correspond to the arrow of the section
+                        <br>
+                        drop-down-section-content: correspond to the area holding the content of the section
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Drop Down Section as many elements as you wish inside it.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Drop Down Section has 1 event to handle.</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        statue-changed: fired when the statut of the section changed
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

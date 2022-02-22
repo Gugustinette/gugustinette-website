@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Button</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Basic Component - Button</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Button is a easily programmable component that is mean to detect user clicks.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Button is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-button></gus-button>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Box has 3 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        content (String): the text written in the button
+                        <br>
+                        outlined (Boolean): tells if the button must be in outlined style
+                        <br>
+                        noborder (Boolean): tells if the button must be in no border style
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Box has 1 part to customize :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        button : correspond to the button itself
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Button doesn't have any slot.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Button doesn't have any specific event to handle.</h5>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

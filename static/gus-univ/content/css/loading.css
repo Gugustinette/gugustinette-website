@@ -1,0 +1,17 @@
+
+
+#panel-loading-edt::part(focus-window) {
+    position: absolute;
+}
+
+#panel-loading-mail::part(focus-window) {
+    position: absolute;
+}
+
+#panel-loading-notes::part(focus-window) {
+    position: absolute;
+}
+
+#panel-loading-madoc::part(focus-window) {
+    position: absolute;
+}

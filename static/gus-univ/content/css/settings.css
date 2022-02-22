@@ -1,0 +1,96 @@
+
+
+
+
+.settings-panel {
+    min-width: 300px;
+    width: auto;
+    min-height: 400px;
+
+    max-width: 80vw;
+
+    margin-top: 20px;
+}
+
+
+
+.settings-title {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.settings-title gus-paragraph::part(text) {
+    margin-top: 20px;
+}
+.settings-title hr {
+    width: 20%;
+}
+
+.settings-option {
+    display: flex;
+    flex-direction: row;
+
+    min-height: 60px;
+    margin-top: 20px;
+}
+.settings-option gus-paragraph::part(text) {
+    margin-left: 30px;
+    width: max-content;
+}
+.settings-option > div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-start;
+    width: 100%;
+}
+.settings-option > div > * {
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+.settings-option-big {
+    flex-direction: column;
+}
+
+.settings-option-big .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.input-wrapper {
+    width: 300px;
+    max-width: 300px;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.min-text::part(text) {
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#settings-option-edt-hide-courses-chips::part(chips-list) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#settings-option-ui-color {
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-aspect-ratio: 9/10) {
+    .settings-option gus-paragraph::part(text) {
+        width: fit-content;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Radio Button List</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Basic Component - Radio Button List</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    The Radio Button List is a placement component that is mean to contain one or many <a href="radio-button.html">radio button</a>.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Radio Button List is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-radio-button-list></gus-radio-button-list>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Radio Button List has 2 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        value (String): correspond to the value selected by the user in the radio button list
+                        <br>
+                        default-value (String): correspond to the default value that is selected when the radio buttons are rendered
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Radio Button List has 1 part to customize :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        radio-button-list : correspond to the list iself
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Radio Button List can contain as many radio buttons as you want</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Radio Button List has 1 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        value-changed : fired when the user changed the selected value in the list
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+</html>

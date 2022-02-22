@@ -1,0 +1,46 @@
+nav {
+    width: 100vw;
+
+    display: flex;
+    margin-top: 10px;
+}
+
+.nav-logo {
+    min-height: 20px;
+
+    margin-left: 20px;
+}
+
+.nav-logo img {
+    width: 40px;
+}
+
+.nav-buttons {
+    min-height: 30px;
+    width: 100%;
+    
+    position: absolute;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav-buttons a {
+    width: auto;
+    
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    margin-right: 40px;
+}
+
+.nav-buttons a:hover h4 {
+    color: var(--font-color);
+    transition: 0.2s;
+}
+
+.nav-buttons a h4 {
+    color: var(--primary-color);
+    transition: 0.2s;
+}

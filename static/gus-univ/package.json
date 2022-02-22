@@ -1,0 +1,16 @@
+{
+  "name": "edt-iut-nantes",
+  "version": "1.0.0",
+  "description": "Surcouche de l'emploi du temps de l'IUT de Nantes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Augustin MERCIER \"Gugustinette\"",
+  "license": "MIT",
+  "dependencies": {
+    "gus-ui": "^1.0.28",
+    "ics-to-json": "^1.0.0"
+  }
+}

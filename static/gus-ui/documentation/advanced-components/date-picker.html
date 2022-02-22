@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Date Picker</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+
+    <script type="module" src="../../node_modules/gus-ui/gus_ui.js"></script>
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Advanced Component - Date Picker</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Date Picker is a powerful component that let the user select a specific date.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Date Picker is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-date-picker></gus-date-picker>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Date Picker has 1 attribute :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        lang (String): en | fr -> correspond to the lang of the date picker
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Date Picker doesn't have any part to customize at the moment.</h5>
+
+                <style>
+                    gus-ui::part(gus-ui) {
+                        width:unset;
+                    }
+                </style>
+                <gus-ui>
+                    <gus-date-picker></gus-date-picker>
+                </gus-ui>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Date Picker doesn't have any slots.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Date Picker has 9 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        date-changed: fired when the selected date in the date picker has changed
+                        <br>
+                        confirm: fired when the user confirmed the selection of a date
+                        <br>
+                        cancel: fired when the user canceled the selection of a date
+                        <br>
+                        confirm-slider: fired when the user confirmed a month/year selection
+                        <br>
+                        cancel-slider: fired when the user canceled a month/year selection
+                        <br>
+                        confirm-keyboard: fired when the user selected a date using the keyboard input
+                        <br>
+                        cancel-keyboard: fired when the user canceled the selection of a date using the keyboard input
+                        <br>
+                        confirm-keyboard-scfl: fired when the user selected a date succesfully using the keyboard input
+                        <br>
+                        confirm-keyboard-wrong: fired when the user failed in selecting a date using the keyboard input
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+</html>

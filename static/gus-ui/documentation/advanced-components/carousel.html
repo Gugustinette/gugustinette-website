@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Carousel</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Advanced Component - Carousel</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Carousel is a surface that display a set of images.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Carousel is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-carousel></gus-carousel>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Carousel has 6 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        image-collection (JSON): JSON Array of the URLs leading to the images to display in the carousel
+                        <br>
+                        infinite (Boolean): tells if the navigation through the images should be infinite or not
+                        <br>
+                        auto-scrolling (Boolean): tells if the carousel should navigate through the images automatically
+                        <br>
+                        auto-scroling-delay (Int): the time passing between each images when auto-scrolling is true (in ms)
+                        <br>
+                        hide-arrows (Boolean): tells if the arrows on the sides of the carousel must be hided or not
+                        <br>
+                        hide-bar (Boolean): tells if the state bar displaying at the bottom of the carousel must be hided or not
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Carousel has 4 parts to customize :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        carousel: correspond to the carousel itself
+                        <br>
+                        left-button: correspond to the left arrow of the carousel
+                        <br>
+                        bar: correspond to the state bar at the bottom of the carousel
+                        <br>
+                        right-button: correspond to the right arrow of the carousel
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Carousel has 3 slots :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        left-button: correspond to the left button of the carousel
+                        <br>
+                        bar: correspond to the state bar at the bottom of the carousel
+                        <br>
+                        right-button: correspond to the right button of the carousel
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Carousel has 2 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        next-image: fired when the carousel is going to the next image of the collection succesfully
+                        <br>
+                        previous-image: fired when the carousel is going to the previous image of the collection succesfully
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Range Slider</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Basic Component - Range Slider</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Range Slider is a component that is used to select a value in a specific range of number.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Range Slider is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-range-slider></gus-range-slider>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Range Slider has 4 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        int-start (Int): correspond to the minimum value that can be selected
+                        <br>
+                        int-end (Int): correspond to the maximum value that can be selected
+                        <br>
+                        value (Int): correspond to the value selected by the user on the slider
+                        <br>
+                        round-button-position (Boolean): tells if the range slider should round the position of the button correspond to the selected value
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Range Slider has 2 parts to customize :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        range-slider: correspond to the background part of the slider
+                        <br>
+                        button: correspond to the button of the slider
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Range Slider doesn't have any slot.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Range Slider has 1 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        selected-value-changed: fired when the user selected a new value using the range slider
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

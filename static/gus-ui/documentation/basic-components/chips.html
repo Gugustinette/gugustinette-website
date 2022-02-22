@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Chips</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Basic Component - Chips</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Chips is a component that is used to make selections, filter content, and others. It is generally used with a <a href="chips-list.html">chips list</a>.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Chips is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-chips></gus-chips>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Chips has 5 attributes :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        content (String): correspond to the text written in the chips
+                        <br>
+                        check-visible (Boolean): tells if the chips is of type "check", which mean it can be checked or not
+                        <br>
+                        checked (Boolean): tells if the chips is checked
+                        <br>
+                        cross-visible (Boolean): tells if the chips is of type "cross", which mean it has a cross to click on
+                        <br>
+                        auto-delete (Boolean): tells if the chips must be removed when clicking on the cross
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Chips has 4 part to customize :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        chips: correspond to the chips itself
+                        <br>
+                        chips-check: correspond to the "check" svg displaying on "check-chips"
+                        <br>
+                        chips-content: correspond to the text written in the chips
+                        <br>
+                        chips-cross: correspond to the "cross" svg displaying on "cross-chips"
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Chips doesn't have any slot.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Chips has 2 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        value-changed : fired when the state of the chips changed (only work on "check-chips")
+                        <br>
+                        close : fired when the user clicked on the cross (only work on "cross-chips")
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

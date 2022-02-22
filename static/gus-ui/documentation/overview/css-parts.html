@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | CSS Parts</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Overview - CSS Parts</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>
+                    Parts are what make components easy to customize.
+                    <br>
+                    Selecting a part is fairly easy :
+                    <br>
+                    <br>
+                    <ul>
+                        <li>1. Select the element as usual in CSS, for example with a class ".element"</li>
+                        <li>2. Add the "::part()" selector to you're element selector</li>
+                        <li>3. Precise the part you want to customize in the parenthesis.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    For example, selecting all gus-switch "background" part can be done like that (in CSS) :
+                    <br>
+                    <div class="content-section-code">
+                        <h5>
+                            gus-switch::part(switch-background) {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;put your rules here
+                                <br>
+                            }
+                        </h5>
+                    </div>
+                </h5>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+</html>

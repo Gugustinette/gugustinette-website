@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Quick Start</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Overview - Quick Start</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Introduction</h3>
+
+                <h5>
+                    GusUI is a front-end UI library that is written in pure HTML, CSS and JavaScript. That means GusUI can be used in any web environnement, all it needs is a modern browser, such as Google Chrome, Firefox,...
+                    <br>
+                    The library is powered by the <a href="https://webcomponents.dev/">Web Component</a> technology.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Installation</h3>
+
+                <h5>
+                    Using GusUI require the installation of <a href="https://npmjs.com">npm</a>, which is the package manager of <a href="https://nodejs.org">NodeJS</a>. You'll need both of them in order to install GusUI.
+                    <br>
+                    As GusUI is distributed using npm, it is fairly easy to install.
+                    <br>
+                    <br>
+                    First, make sure you're in a NodeJS project. If not, create one using this command in the terminal from the root of your project :
+                    
+                    <div class="content-section-code">
+                        <h5>
+                            npm init
+                        </h5>
+                    </div>
+
+                    <br>
+                    <br>
+                    
+                    Once you're done with setting up the project, just install the library using :
+
+                    <div class="content-section-code">
+                        <h5>
+                            npm install gus-ui
+                        </h5>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    The library folder (called "gus-ui") should have appeared in the "node_modules" folder.
+                    <br>
+                    It means the library was successfully imported in your project.
+                </h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Initiating the library</h3>
+
+                <h5>
+                    Once the library is installed in your project, all you need to do is import its main file to access the components.
+                    <br>
+                    GusUI is imported as a module in the head part of your HTML file, just as below :
+
+                    <div class="content-section-code">
+
+                        <h5 id="content-code-1">code</h5>
+                        <script>
+                            var str = document.querySelector("#content-code-1")
+                            // Code to display
+                            str.innerHTML = `
+                            <script type="module" src="node_modules/gus-ui/gus_ui.js">
+                            `
+                            str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                        </script>
+    
+                    </div>
+
+                    <br>
+                    <br>
+                    The "src" attributes should then lead to the gus_ui.js file, which is at the root of the library folder.
+                    <br>
+                    Make sure that all your files are pointing correctly to the library's main file.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Using GusUI</h3>
+
+                <h5>
+                    GusUI requires to initiate the UI using a main "gus-ui" element.
+                    <br>
+                    You can just create it as a child of your body, as below :
+
+                    <div class="content-section-code">
+
+                        <h5 id="content-code-2">code</h5>
+                        <script>
+                            var str = document.querySelector("#content-code-2")
+                            // Code to display
+                            str.innerHTML = `
+                            <gus-ui>  
+                            </gus-ui>
+                            `
+                            str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                        </script>
+    
+                    </div>
+
+                    <br>
+                    <br>
+
+                    The "gus-ui" element has 3 attributes :
+
+                    <div class="content-section-code">
+                        <h5>
+                            mode (String): dark | light -> correspond to the theme of the UI
+                            <br>
+                            color-light (#HexColor): correspond to the primary color of the UI in light mode
+                            <br>
+                            color-dark (#HexColor): correspond to the primary color of the UI in dark mode
+                        </h5>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    Once you're done setting up the UI, you can allready start creating components inside.
+                    <br>
+                    Every other HTML5 component can be created inside the UI.
+                    <br>
+                    Now have fun playing with the components.
+
+                </h5>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+</html>

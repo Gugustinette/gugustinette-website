@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Slots</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Overview - Slots</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>
+                    Slots add a lot to the way you can customize and use the components. Slots are element to add inside a component in order to replace certain parts of it.
+                    <br>
+                    <br>
+                    Some components take infinite amount of elements inside, such as the <a href="../advanced-components/section-slider.html">Section Slider</a> or the <a href="../advanced-components/drop-down-section.html">Drop Down Section</a> which mean you can just throw every element you wish inside.
+                    <br>
+                    <br>
+                    Other components take specific slots, such as the <a href="../advanced-components/alert-box.html">Alert Box</a> which takes 2 speficic slots that are "icon" and "close".
+                    Targeting a slot is fairly easy, all you need to do is putting your element inside the component and add the "slot" attribute to it.
+                    <br>
+                    For example, targeting the "icon" slot with a div of the alert box can be done as :
+
+                    <div class="content-section-code">
+
+                        <h5 id="content-code-1">code</h5>
+                        <script>
+                            var str = document.querySelector("#content-code-1")
+                            // Code to display
+                            str.innerHTML = `
+                            <div slot="icon"></div>
+                            `
+                            str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                        </script>
+    
+                    </div>
+                </h5>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+</html>

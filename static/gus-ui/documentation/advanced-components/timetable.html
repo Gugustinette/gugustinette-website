@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Time Table</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Advanced Component - Time Table</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Time Table is a useful components that let you display tasks or events among days and hours.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Time Table is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-timetable></gus-timetable>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Time Table has 3 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        content (JSON Array) : correspond to an array of arrays which contains the tasks for each days, in normal order.
+                        <br>
+                        Each task is a JSON Object of type : {
+                        <br>
+                        &emsp;&emsp;title: [string describing the task],<br>
+                        &emsp;&emsp;startHour: [string correspond to the hour displayed where the task should start],<br>
+                        &emsp;&emsp;startMinutes: [int from 1 to 59 that correspond to the number of minutes to add to the startHour],<br>
+                        &emsp;&emsp;endHour: [string correspond to the hour displayed where the task should start],<br>
+                        &emsp;&emsp;startMinutes: [int from 1 to 59 that correspond to the number of minutes to add to the endHour]<br>
+                        }
+
+                        <br>
+                        <br>
+                        days (JSON Array) : array of string corresponding to the days at the top of the timetable
+                        <br>
+                        <br>
+                        hours (JSON Array) : array of strings correspond to the hours displaying at the left of the timetable
+                    </h5>
+                </div>
+
+                <br>
+                <h5>
+                    In theory, the timetable lets you write anything you want in the hours and days attributes.
+                    <br>
+                    The tasks are displayed following the order of the JSON Array you're giving, which mean you just need to make sure that the days and tasks arrays are according to each other.
+                    <br>
+                    The startHour and endHour attributes of tasks can contain anything that is displaying in the hours.
+                </h5>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Time Table has 5 parts to customize : </h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        timetable: correspond to the timetable itself
+                        <br>
+                        hours-holder: correspond to the column holding hours
+                        <br>
+                        days: correspond to the cells holding days
+                        <br>
+                        content-cell: correspond to the cells of the timetable grid
+                        <br>
+                        task: correspond to the tasks displaying on the timetable
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Time Table doesn't have any slots.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Time Table doesn't have any event to handle.</h5>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

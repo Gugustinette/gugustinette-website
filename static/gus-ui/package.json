@@ -1,0 +1,14 @@
+{
+  "name": "gusui-website",
+  "version": "1.0.0",
+  "description": "Offical website for GusUI web component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Augustin MERCIER \"Gugustinette\"",
+  "license": "MIT",
+  "dependencies": {
+    "gus-ui": "^1.0.2"
+  }
+}

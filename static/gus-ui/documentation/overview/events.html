@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Events</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Overview - Events</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>
+                    Events are the most important part of web components when it comes to programming an interface.
+                    <br>
+                    An event is handled using the "addEventListener()" function, which is used as the following :
+                    <br>
+                    <br>
+                    <ul>
+                        <li>1. Select your element in JS</li>
+                        <li>2. Call the "addEventListener()" function on it</li>
+                        <li>3. Catch the specific event you want</li>
+                        <li>4. Write the code to read when the event is fired</li>
+                    </ul>
+                    <br>
+                    <br>
+                    For example, handling the state change of a gus-switch can be done like that (in JavaScript) :
+                    <br>
+                    <div class="content-section-code">
+                        <h5>
+                            var gusSwitch = document.querySelector("#gus-switch-selector")
+                            <br>
+                            <br>
+                            gusSwitch.addEventListener("value-changed", function() {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Write your code here
+                                <br>
+                            })
+                        </h5>
+                    </div>
+                </h5>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+</html>

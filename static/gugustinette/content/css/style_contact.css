@@ -1,0 +1,55 @@
+.contact {
+    position: relative;
+    width: 100vw;
+    min-height: 400px;
+
+    margin-top: 200px;
+
+    background: var(--primary-text-color);
+
+    display: grid;
+    place-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.social-icon {
+    display: grid;
+    place-items: center;
+
+    height: 45px;
+    width: 45px;
+
+    border-radius: 100%;
+    
+    border: solid 2px rgba(255, 255, 255, 0.6);
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+.social-icon:hover {
+    border-color: var(--white);
+
+    background: var(--white);
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+.social-icon svg {
+    fill: var(--white);
+    transition: 0.2s;
+}
+.social-icon:hover svg {
+    fill: var(--primary-text-color);
+    transition: 0.2s;
+}
+
+@media screen and (max-aspect-ratio: 8/9) {
+    .contact {
+        margin-top: 700px;
+    }
+}

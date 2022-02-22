@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Fade In</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Special Component - Fade In</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Fade In is a special effect that slowly display elements when they're reached by the user when scrolling.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>A Fade In should contain the element that is mean to have the fade in effect. Fade In is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-fade-in></gus-fade-in>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Fade In has 4 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        offset (Int): correspond to the number of pixels that is not considered as visible at the bottom of the window.
+                        It is set to 100 by default, this means that if the element is in the last 100 pixels of the window height, the effect won't launch.
+                        It is mainly used to show elements when they hit near the middle of the window.
+                        <br>
+                        direction (String): top | bottom | left | right -> correspond to the direction of the effect
+                        <br>
+                        delay (Int): correspond to the delay before the effect launches (in ms)
+                        <br>
+                        speed (Int): correspond to the speed of the effect (in ms)
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Fade In has 1 part to customize :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        fade-in: correspond to the area of the effect iself
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Fade In can contain any element you want.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Fade In has 1 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        fade-in: fired when the effect launches
+                    </h5>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+</html>

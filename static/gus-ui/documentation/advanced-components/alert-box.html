@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Alert Box</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Advanced Component - Alert Box</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Alert Box is a information component that is used to alert the user of something.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Alert Box is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-alert-box></gus-alert-box>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Alert Box has 2 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        label-title (String): correspond to the title of the alert
+                        <br>
+                        label-description (String): correspond to the description of the alert
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Alert Box has 6 parts to customize :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        alert-box: correspond to the alert box itself
+                        <br>
+                        icon: correspond to the icon of the alert box
+                        <br>
+                        title: correspond to the title of the alert box
+                        <br>
+                        line: correspond to the line showing between the title and description
+                        <br>
+                        description: correspond to the description of the alert box
+                        <br>
+                        close-icon: correspond to the "cross" icon displaying at the top-right corner of the alert box
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Alert Box has 2 slots :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        icon: correspond to the icon of the alert box
+                        <br>
+                        close: correspond to the "closing" icon displaying at the top-right corner of the alert box
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Alert Box doesn't have any event to handle.</h5>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

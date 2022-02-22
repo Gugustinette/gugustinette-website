@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+
+    --gus-univ-color-red: rgb(238, 106, 106);
+}
+
+body {
+    background: var(--gus-ui-color-background);
+}
+
+
+
+gus-ui::part(gus-ui){
+    background: none;
+}
+
+
+.gus-ui-nav-button svg {
+    fill: var(--gus-ui-color-primary);
+}
+.gus-ui-nav-button i {
+    color: var(--gus-ui-color-primary);
+}
+
+gus-text-area::part(textarea) {
+    font-family: 'Roboto', sans-serif;
+}
+gus-button::part(button) {
+    box-shadow: var(--gus-ui-color-surface-shadow);
+}
+gus-title::part(text) {
+    margin-bottom: 10px;
+}
+
+
+
+gus-alert-box::part(alert-box) {
+    max-width: 70vw;
+    z-index: 10;
+}
+
+.text-warning::part(text) {
+    color: var(--gus-univ-color-red);
+}
+
+.gus-ui-panel {
+    position: relative;
+
+    height: 100%;
+    width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+
+
+.panel {
+    width: 100vw;
+
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.panel > * {
+    width: 90%;
+}
+
+
+@media screen and (max-aspect-ratio: 9/10) {
+    *::-webkit-scrollbar {
+        display: none;
+    }
+
+    * {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    #section-slider::part(slider_button) {
+        min-width: 0px;
+        width: 20vw;
+        max-width: 20vw;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Countdown</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Advanced Component - Countdown</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Countdown is a component that displays a countdown.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Countdown is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-countdown></gus-countdown>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Countdown has 8 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        days (Int): number of days set to the counter
+                        <br>
+                        hours (Int): number of hours set to the counter
+                        <br>
+                        minutes (Int): number of minutes set to the counter
+                        <br>
+                        seconds (Int): number of seconds set to the counter
+                        <br>
+                        milliseconds (Int): number of milliseconds set to the counter
+                        <br>
+                        show-days (Boolean): tells if the days should be displayed on the counter
+                        <br>
+                        show-hours (Boolean): tells if the hours should be displayed on the counter
+                        <br>
+                        show-minutes (Boolean): tells if the minutes should be displayed on the counter
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Carousel has 1 parts to customize :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        countdown: correspond to the countdown itself
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Carousel doesn't have any slot.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Carousel has 1 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        finished: fired when the countdown is over
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

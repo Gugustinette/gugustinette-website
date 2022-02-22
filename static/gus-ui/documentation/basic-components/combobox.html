@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gus UI Documentation | Combobox</title>
+
+    <link rel="stylesheet" href="../../content/CSS/style_all.css">
+
+    <link rel="stylesheet" href="../content/CSS/doc.css">
+    <link rel="stylesheet" href="../content/CSS/doc-nav.css">
+</head>
+<body>
+    <nav class="doc-nav">
+    </nav>
+
+    <div class="content">
+        <div class="content-header">
+        </div>
+
+        <div class="content-page-title">
+            <h2>Basic Component - Combobox</h2>
+            <hr>
+        </div>
+
+        <div class="content-sections">
+            <div class="content-section">
+                <h3>Overview</h3>
+
+                <h5>
+                    Combobox is a component that is mean to select one option among a set of data.
+                </h5>
+
+            </div>
+
+            <div class="content-section">
+                <h3>Element</h3>
+
+                <h5>Combobox is created in HTML as below :</h5>
+                
+                <div class="content-section-code">
+
+                    <h5 id="content-code-1">code</h5>
+                    <script>
+                        var str = document.querySelector("#content-code-1")
+                        // Code to display
+                        str.innerHTML = `
+                        <gus-combobox></gus-combobox>
+                        `
+                        str.innerHTML = str.innerHTML.replace("</", "&lt;/").replace("<", "&lt;").replace(">", "&gt;")
+                    </script>
+
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Attributes</h3>
+
+                <h5>Chips has 3 attributes :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        content (JSON): should be a JSON Array containing every option as strings
+                        <br>
+                        default-value (String): represent the default option selected in the combobox (should be the first element in the array by default)
+                        <br>
+                        selected-value (String): represent the value selected by the user at any time.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>CSS Parts</h3>
+
+                <h5>Combobox has 7 part to customize :</h5>
+
+                <div class="content-css-part-img">
+                </div>
+                
+                <div class="content-section-code">
+                    <h5>
+                        combobox: correspond to the combobox itself
+                        <br>
+                        combobox-content: correspond to the top part of the combobox, displaying the selected value
+                        <br>
+                        combobox-content-text: correspond to the text displaying the selected value
+                        <br>
+                        combobox-content-arrow: correspond to the arrow svg of the combobox
+                        <br>
+                        combobox-elements: correspond to the bottom part of the combobox, displaying every option when clicking
+                        <br>
+                        combobox-element: correspond to every element displaying in the bottom part
+                        <br>
+                        combobox-element-text: correspond to the text displaying in every element of the bottom part
+                    </h5>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Slots</h3>
+
+                <h5>Combobox doesn't have any slot.</h5>
+                
+            </div>
+
+            <div class="content-section">
+                <h3>Events</h3>
+
+                <h5>Combobox has 3 event to handle :</h5>
+                
+                <div class="content-section-code">
+                    <h5>
+                        value-changed: fired when the state of the combobox changed, which mean the user made a selection
+                        <br>
+                        toggle: fired when the user toggle the combobox
+                        <br>
+                        close: fired when the user close the combobox
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../content/JS/doc-header.js"></script>
+<script src="../content/JS/doc-nav.js"></script>
+<script src="../content/JS/doc-css-part.js"></script>
+</html>

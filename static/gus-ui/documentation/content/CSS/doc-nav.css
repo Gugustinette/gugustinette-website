@@ -1,0 +1,102 @@
+.doc-nav {
+    width: 300px;
+    height: 100vh;
+
+    background: #242424;
+    border-right: solid 1px grey;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    overflow: scroll;
+
+    transition: 0.2s;
+}
+
+.doc-nav a {
+    color: var(--font-color);
+    transition: 0.1s;
+}
+.doc-nav a:hover {
+    color: var(--primary-color);
+    transition: 0.1s;
+}
+
+.doc-nav h3 {
+    margin-top: 15px;
+}
+
+.doc-nav hr {
+    margin-top: 15px;
+
+    width: 85%;
+}
+
+.doc-nav h4 {
+    margin-top: 20px;
+}
+
+.doc-nav-component-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.doc-nav-component-list h5 {
+    padding-top: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.list-overview h5:hover {
+    color: var(--tertiary-color);
+    transition: 0.1s;
+}
+.list-basic h5:hover {
+    color: var(--primary-color);
+    transition: 0.1s;
+}
+.list-advanced h5:hover {
+    color: var(--secondary-color);
+    transition: 0.1s;
+}
+.list-text h5:hover {
+    color: var(--fourth-color);
+    transition: 0.1s;
+}
+.list-special h5:hover {
+    color: var(--fifth-color);
+    transition: 0.1s;
+}
+
+
+.doc-nav .actual-page-overview {
+    color: var(--tertiary-color)
+}
+.doc-nav .actual-page-basic {
+    color: var(--primary-color)
+}
+.doc-nav .actual-page-advanced {
+    color: var(--secondary-color)
+}
+.doc-nav .actual-page-text {
+    color: var(--fourth-color)
+}
+.doc-nav .actual-page-special {
+    color: var(--fifth-color)
+}
+
+@media screen and (max-aspect-ratio: 9/9) {
+    .doc-nav-mobile-on {
+        margin-left: 0px !important;
+    }
+
+    .doc-nav {
+        width: 500px;
+
+        margin-left: -501px;
+        transition: 0.2s;
+    }
+}
