@@ -18,6 +18,11 @@ const app = express();
 const server = require('http').createServer(app);
 app.use(express.static(__dirname + "/static"));
 
+const websites = [
+  "gus-ui",
+  "gus-univ",
+  "main"
+]
 
 
 
@@ -32,7 +37,8 @@ app.get('/', (req, res) => { // Page d'index - Redirection basique de la page HT
 });
 app.get('/*/*', (req, res) => { // Redirection des autres pages
   var website = req.originalUrl.split("/")[1];
-  if (website !== "gus-ui" && website !== "gus-univ") {
+  // If website not in websites list
+  if (websites.indexOf(website) == -1) {
     res.sendFile(__dirname + "/static/gugustinette" + req.originalUrl);
   }
   else {
