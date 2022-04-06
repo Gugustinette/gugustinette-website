@@ -142,7 +142,7 @@ const loader = new GLTFLoader();
 
 // Load model
 loader.load(
-    '/main/content/assets/3d/main/phone.glb',
+    '/main/content/assets/3d/main/Phone.glb',
     ( model ) => {
         // Make model bigger
         model.scene.scale.set( SIZE, SIZE, SIZE );
