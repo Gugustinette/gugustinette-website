@@ -4,7 +4,8 @@
   "description": "Main Gugustinette Server Script",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "pm2 start server.js"
   },
   "author": "Augustin MERCIER Gugustinette",
   "license": "ISC",
