@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "deploy": "pm2 start server.js"
+    "deploy": "pm2 start server.js --name MainWebServer"
   },
   "author": "Augustin MERCIER Gugustinette",
   "license": "ISC",
