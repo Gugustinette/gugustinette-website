@@ -2,7 +2,7 @@
 # Version: 1.0.0
 
 # Run Install Script
-sh scripts/install.sh
+./scripts/install.sh
 
 # Remove Old Build
 rm -rf dist
