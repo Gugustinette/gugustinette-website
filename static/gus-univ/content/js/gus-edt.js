@@ -78,7 +78,7 @@ let actualWeekOfTheYear = selectedWeekOfTheYear;
 let actualGroup = localStorage.getItem("selectedGroup");
 
 if (actualGroup === null) {
-    actualGroup = "INFO 2 Groupe 2";
+    actualGroup = "LP MiAR Groupe 2";
     localStorage.setItem("selectedGroup", actualGroup);
 }
 

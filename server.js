@@ -1,22 +1,19 @@
+/* eslint-disable no-console */
+/* eslint-disable n/no-path-concat */
 /// APP INIT
 
-// Create the app
-// const { debug } = require('console')
-
+// Imports
+const http = require('http')
 const express = require('express');
-var cors = require('cors');
-const got = require('got');
-
-// const bodyParser = require("body-parser");
+const cors = require('cors');
+const axios = require('axios');
 
 const app = express();
 
-// app.use(bodyParser.json());
-
 
 // Create Server
-const server = require('http').createServer(app);
-app.use(express.static(__dirname + "/static"));
+const server = http.createServer(app);
+app.use(express.static(__dirname + "/dist"));
 
 const websites = [
   "gus-ui",
@@ -32,16 +29,16 @@ const websites = [
 
 // Static Index Root
 app.get('/', (req, res) => { // Page d'index - Redirection basique de la page HTML
-  res.sendFile(__dirname + "/static/gugustinette" + req.originalUrl);
+  res.sendFile(__dirname + "/dist/gugustinette" + req.originalUrl);
 });
 app.get('/*/*', (req, res) => { // Redirection des autres pages
-  var website = req.originalUrl.split("/")[1];
+  const website = req.originalUrl.split("/")[1];
   // If website not in websites list
-  if (websites.indexOf(website) == -1) {
-    res.sendFile(__dirname + "/static/gugustinette" + req.originalUrl);
+  if (websites.includes(website)) {
+    res.sendFile(__dirname + "/dist/gugustinette" + req.originalUrl);
   }
   else {
-    res.sendFile(__dirname + "/static" + req.originalUrl);
+    res.sendFile(__dirname + "/dist" + req.originalUrl);
   }
 });
 
@@ -49,13 +46,13 @@ app.get('/*/*', (req, res) => { // Redirection des autres pages
  * Gus Edt
 */
 app.get('/gus-edt-ics-g*', cors(), async (req, res) => { // Gus Edt
-  var groupId = req.originalUrl.split("-")[3];
+  const groupId = req.originalUrl.split("-")[3];
 
   try {
-		const response = await got(`https://edt.univ-nantes.fr/iut_nantes/${groupId}.ics`);
-    res.send(response.body);
+    const response = await axios.get(`https://edt.univ-nantes.fr/iut_nantes/${groupId}.ics`);
+    res.send(response.data);
 	} catch (error) {
-    res.send(error.response.body);
+    res.status(500).send(error);
 	}
 
 });

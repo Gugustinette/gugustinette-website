@@ -1,16 +1,19 @@
-# Gugustinette Server
+# gugustinette-website
 
-## Introduction
-This repository corresponds to the projects holding the website at `https://gugustinette.com`
+## Build Setup
 
-## Requirements
-- NodeJS
+```bash
+# install dependencies
+$ ./scripts/install.sh
 
-## Install
-In the root folder :
-- Run `npm install`
-- Run `npm start`
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-## Credits
-Augustin MERCIER "Gugustinette"
-mercier.augustin@outlook.fr
+# build for production and launch server
+$ ./scripts/build.sh
+$ node server.js
+
+# deploy to production (with pm2)
+$ ./scripts/deploy.sh
+
+```

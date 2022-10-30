@@ -1,6 +1,6 @@
 import { GusAlertBox } from "../../node_modules/gus-ui/advanced_components/gus_alert_box.js";
 
-localStorage.setItem("reqOrigin", "http://localhost:3000");
+localStorage.setItem("reqOrigin", "https://gugustinette.com");
 
 var justConnected = localStorage.getItem("just-connected") === 'true';
 
