@@ -14,6 +14,3 @@ done
 
 # Install dependencies for project
 npm install
-
-# Build & Generate static sites
-npm run generate
