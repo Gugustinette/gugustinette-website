@@ -60,4 +60,4 @@ app.get('/gus-edt-ics-g*', cors(), async (req, res) => { // Gus Edt
 
 // Setting up the server to listen on port 3000
 console.log("Server listening on port 3000");
-server.listen(3000);
+server.listen(9090);
