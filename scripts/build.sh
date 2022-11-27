@@ -11,4 +11,4 @@ rm -rf dist
 npm run generate
 
 # Move dist/gugustinette content to dist/
-mv dist/gugustinette/* dist/
+# mv dist/gugustinette/* dist/

@@ -51,14 +51,22 @@ export default {
 </script>
 
 <style lang="scss">
-// Import font 'Open Sans' from Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-
 // Import font 'Have Heart One' from assets folder
 @font-face {
   font-family: 'Have Heart One';
   src: url('~/assets/fonts/Have-Heart/TTF/Have\ Heart\ One.ttf');
+}
+
+// Import font 'Open Sans' from assets folder
+@font-face {
+  font-family: 'Open Sans';
+  src: url('~/assets/fonts/Open-Sans/static/OpenSans/OpenSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('~/assets/fonts/Open-Sans/static/OpenSans/OpenSans-Bold.ttf');
+  font-weight: 600;
 }
 
 :root {
