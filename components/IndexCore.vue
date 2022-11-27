@@ -8,26 +8,22 @@
       <div class="ellipse ellipse-4"></div>
     </div>
     <div class="tail">
-      <div class="tail-1">
-        <div class="tail-2">
-          <div class="tail-3"></div>
-        </div>
-      </div>
+      <div class="tail-1"></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "IndexPage",
+  name: "IndexCore",
 }
 </script>
 
 <style lang="scss">
 .core {
   position: absolute;
-  width: 650px;
-  height: 650px;
+  width: 60vw;
+  height: 60vw;
 
   .core-main {
     position: absolute;
@@ -44,8 +40,23 @@ export default {
     border-radius: 50%;
     z-index: 10;
     background: var(--color-main-gradient);
-    background-size: 200% 200%;
-    animation: MainGradient 4s ease infinite;
+    background-size: 100% 100%;
+    // animation: MainGradient 4s ease infinite;
+
+    // CSS Gradient Animation
+    /*
+    @keyframes MainGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    */
   }
 
   .ellipse {
@@ -102,34 +113,28 @@ export default {
 
     .tail-1 {
       position: relative;
-      height: 60vh;
+      height: 57.4vh;
       width: 4px;
 
-      background: linear-gradient(0deg, #F9466C 0%, #435EF8 77.6%);
+      background: linear-gradient(0deg, var(--color-primary-pink) 0%, var(--color-primary-blue) 77.6%);
       filter: blur(1.5px);
-
-      .tail-2 {
-        position: absolute;
-        height: 4px;
-        width: 34vw;
-
-        top: 100%;
-        right: 0;
-
-        background: linear-gradient(-90deg, #F9466C 0%, #435EF8 77.6%);
-
-        .tail-3 {
-          position: absolute;
-          height: 10vh;
-          width: 4px;
-
-          top: 100%;
-          left: 0;
-
-          background: linear-gradient(0deg, #F9466C 0%, #435EF8 77.6%);
-        }
-      }
     }
+  }
+
+  @media screen and (max-width: 900px) {
+    .tail-1 {
+      position: relative;
+      height: 57.4vh;
+      width: 4px;
+
+      background: linear-gradient(0deg, var(--color-primary-purple) 0%, var(--color-primary-blue) 77.6%) !important;
+      filter: blur(1.5px);
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    width: 80vh;
+    height: 80vh;
   }
 }
 </style>

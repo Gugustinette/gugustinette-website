@@ -25,22 +25,47 @@
         </div>
       </div>
     </div>
+    <div class="section-3">
+      <h2>Tech Stack</h2>
+      <p>Amongst all the available environments, here are some that I have experience with.</p>
+      <RadarTech />
+    </div>
+    <div class="section-4">
+      <h2>Projects</h2>
+      <p>
+        Want to see what I did ?
+        <br />
+        Here are some of my projects.
+      </p>
+      <Projects />
+    </div>
+    <IndexContact />
   </div>
 </template>
 
 <script>
+
 export default {
-  name: "IndexPage",
+    name: "IndexPage",
 }
 </script>
 
 <style lang="scss">
+// Import font 'Open Sans' from Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+// Import font 'Have Heart One' from assets folder
+@font-face {
+  font-family: 'Have Heart One';
+  src: url('~/assets/fonts/Have-Heart/TTF/Have\ Heart\ One.ttf');
+}
 
 :root {
   --color-background: #07000B;
   --color-font: #F2F2F2;
   --color-font-transparent: rgba(255, 255, 255, 0.15);
+  --color-font-grey: #BDBDBD;
 
   --color-primary-pink: #F9466C;
   --color-primary-purple: #8955C3;
@@ -49,10 +74,9 @@ export default {
   --color-main-gradient: linear-gradient(164.71deg, var(--color-primary-pink) 3.52%, var(--color-primary-blue) 95.61%);
 }
 
-// CSS Gradient Animation
-
 body {
   background-color: var(--color-background);
+  overflow-x: hidden;
 }
 
 * {
@@ -68,15 +92,22 @@ h1 {
   font-family: 'Cyrvetica';
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  background: linear-gradient(96.4deg, var(--color-primary-pink) -12.6%, var(--color-primary-blue) 87.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}
+
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  div {
-    max-width: 1920px;
-  }
 }
 
 .section-1 {
@@ -87,7 +118,7 @@ h1 {
   width: 100%;
 
   // https://getwallpapers.com/wallpaper/full/3/f/f/18044.jpg
-  background-image: url('~/assets/Background.png');
+  // background-image: url('~/assets/Background.png');
   background-size: cover;
   background-position: center;
 
@@ -106,6 +137,20 @@ h1 {
     text-align: right;
 
     max-width: 500px;
+  }
+
+  // Media Queries
+  @media (max-width: 1100px) {
+    // Make text vertical but letter in horizontal
+    h1 {
+      text-orientation: upright;
+      writing-mode: vertical-rl;
+      font-size: 4rem;
+    }
+
+    #name {
+      writing-mode: vertical-lr;
+    }
   }
 }
 
@@ -159,6 +204,64 @@ h1 {
         }
       }
     }
+  }
+
+  // Media Queries
+  @media (max-width: 900px) {
+    .skill {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-bottom: 2rem;
+
+      .description {
+        width: 80%;
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.section-3 {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+
+  max-width: 1920px;
+
+  h2 {
+    margin-bottom: 0.4em;
+    margin: 0 5vw;
+  }
+
+  p {
+    max-width: 40vw;
+    margin: 0 5vw;
+  }
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+  max-width: 1920px;
+
+  h2 {
+    margin-bottom: 0.4em;
+    margin: 0 5vw;
+  }
+
+  p {
+    max-width: 40vw;
+    margin: 0 5vw;
   }
 }
 </style>
