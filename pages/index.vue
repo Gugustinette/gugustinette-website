@@ -96,10 +96,6 @@ body {
   font-style: normal;
 }
 
-h1 {
-  font-family: 'Cyrvetica';
-}
-
 h2 {
   font-weight: bold;
   font-size: 36px;
