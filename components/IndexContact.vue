@@ -41,18 +41,20 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
   h1.contact {
+    width: 200%;
     font-family: 'Have Heart One';
     font-style: normal;
     font-weight: 400;
     font-size: 40vw;
-    line-height: 700px;
+    line-height: 600px;
     display: flex;
     align-items: center;
     text-align: center;
-    width: 200%;
 
-    background: linear-gradient(164.71deg, rgba(249, 70, 108, 0.4) 3.52%, rgba(67, 94, 248, 0.4) 95.61%);
+    background: var(--color-main-gradient);
+    opacity: 0.4;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -87,13 +89,17 @@ export default {
     }
   }
 
+  @media (max-width: 500px) {
+    .links {
+      row-gap: 1.5em;
+      flex-direction: column;
+    }
+  }
+
   @media (max-width: 900px) {
     h1.contact {
-      transform: translateX(-5vw) rotate(12.98deg) translateY(-20vw);
-    }
-
-    .links {
-      column-gap: 1.5em;
+      transform: translateX(-5vw) rotate(12.98deg);
+      line-height: 300px;
     }
   }
 
@@ -101,7 +107,6 @@ export default {
     h1.contact {
       transform: translateX(-5vw) rotate(12.98deg);
       font-size: 30vw;
-      line-height: 700px;
     }
   }
 

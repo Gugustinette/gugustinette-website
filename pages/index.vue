@@ -15,7 +15,7 @@
       <div class="skill skill-server">
         <IndexSkill type="server" />
         <div class="description">
-          <p>Every application has it’s needs when it comes to servers and databases, I can build <span>fast</span> & <span>reliable</span> software architectures that fits any context.</p>
+          <p>Every application has its needs when it comes to servers and databases, I can build <span>fast</span> & <span>reliable</span> software architectures that fits any context.</p>
         </div>
       </div>
       <div class="skill skill-metrics">
@@ -84,7 +84,6 @@ export default {
 
 body {
   background-color: var(--color-background);
-  overflow-x: hidden;
 }
 
 * {
@@ -112,6 +111,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+    row-gap: 2.5vh;
+  overflow-x: hidden;
 }
 
 .section-1 {
@@ -253,8 +254,8 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 300px;
+  margin-bottom: 150px;
 
   max-width: 1920px;
 
