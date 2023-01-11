@@ -105,7 +105,7 @@ export default {
     position: absolute;
     top: 50%;
     left: 0;
-    height: 500px;
+    height: 640px;
     width: 100%;
 
     display: grid;
