@@ -113,7 +113,8 @@ export default {
 
     .tail-1 {
       position: relative;
-      height: 57.4vh;
+      // height: 57.4vh;
+      height: 100%;
       width: 4px;
 
       background: linear-gradient(0deg, var(--color-primary-pink) 0%, var(--color-primary-blue) 77.6%);

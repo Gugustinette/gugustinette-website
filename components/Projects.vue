@@ -2,7 +2,7 @@
   <div class="projects-wrapper">
     <div class="projects">
       <!-- World Where -->
-      <div class="project-card">
+      <a class="project-card" href="https://worldwhere.gugustinette.com">
         <img src="~/assets/projects/WorldWhere.png" alt="Project Image - WorldWhere" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
@@ -12,10 +12,10 @@
             Ukraine/Russia conflict and visualize it on maps and charts.
           </p>
         </div>
-      </div>
+      </a>
 
       <!-- Eris -->
-      <div class="project-card">
+      <a class="project-card" href="https://eris.gugustinette.com">
         <img src="~/assets/projects/Eris.png" alt="Project Image - Eris" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
@@ -24,10 +24,10 @@
             Chrome extension to modify website's interface.
           </p>
         </div>
-      </div>
+      </a>
 
       <!-- GusUI -->
-      <div class="project-card">
+      <a class="project-card" href="https://gugustinette.com/gus-ui">
         <img src="~/assets/projects/GusUI.png" alt="Project Image - GusUI" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
@@ -36,11 +36,11 @@
             NPM library wtih 30+ native web components.
           </p>
         </div>
-      </div>
+      </a>
 
       <!-- Flew -->
-      <div class="project-card">
-        <img src="~/assets/projects/Eris.png" alt="Project Image - Flew" />
+      <a class="project-card" href="https://github.com/Gugustinette/flew">
+        <img src="~/assets/projects/Flew.png" alt="Project Image - Flew" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
           <h3>Flew</h3>
@@ -48,7 +48,7 @@
             Discord-like chat application.
           </p>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
