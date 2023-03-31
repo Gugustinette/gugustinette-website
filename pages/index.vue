@@ -2,8 +2,6 @@
   <div class="main">
     <div class="section-1">
       <IndexCore />
-      <h1 id="name">AUGUSTIN</h1>
-      <h1 id="title">WEB DEVELOPER</h1>
     </div>
     <div class="section-2">
       <div class="skill skill-ui">
@@ -111,17 +109,11 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-    row-gap: 2.5vh;
   overflow-x: hidden;
 }
 
 .section-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   width: 100%;
-
   // https://getwallpapers.com/wallpaper/full/3/f/f/18044.jpg
   // background-image: url('~/assets/Background.png');
   background-size: cover;
@@ -164,7 +156,7 @@ h2 {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  margin-top: 20vh;
+  margin-top: 180px; // 140px + 40px (tail offset)
 
   .skill {
     width: 100%;

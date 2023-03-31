@@ -1,15 +1,19 @@
 <template>
-  <div class="core">
-    <div class="core-main">
-      <div class="core-front main-gradient"></div>
-      <div class="ellipse ellipse-1"></div>
-      <div class="ellipse ellipse-2"></div>
-      <div class="ellipse ellipse-3"></div>
-      <div class="ellipse ellipse-4"></div>
+  <div class="section-1-wrapper">
+    <div class="core">
+      <div class="core-main">
+        <div class="core-front main-gradient"></div>
+        <div class="ellipse ellipse-1"></div>
+        <div class="ellipse ellipse-2"></div>
+        <div class="ellipse ellipse-3"></div>
+        <div class="ellipse ellipse-4"></div>
+      </div>
     </div>
     <div class="tail">
       <div class="tail-1"></div>
     </div>
+    <h1 id="name">AUGUSTIN</h1>
+    <h1 id="title">WEB DEVELOPER</h1>
   </div>
 </template>
 
@@ -20,6 +24,44 @@ export default {
 </script>
 
 <style lang="scss">
+.section-1-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  .tail {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: calc(50% + 42px);
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    .tail-1 {
+      position: relative;
+      height: 100%;
+      width: 4px;
+
+      background: linear-gradient(0deg, var(--color-primary-pink) 0%, var(--color-primary-blue) 77.6%);
+      filter: blur(1.5px);
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .tail {
+      height: calc(50% + 44px);
+
+      .tail-1 {
+        background: linear-gradient(0deg, var(--color-primary-purple) 0%, var(--color-primary-blue) 77.6%) !important;
+        filter: blur(1.5px);
+      }
+    }
+  }
+}
 .core {
   position: absolute;
   width: 60vw;
@@ -99,38 +141,6 @@ export default {
     bottom: 25%;
 
     box-shadow: 0px 0px 836.64px var(--color-primary-blue), 0px 0px 478.08px var(--color-primary-blue), 0px 0px 278.88px var(--color-primary-blue), 0px 0px 139.44px var(--color-primary-blue), 0px 0px 39.84px var(--color-primary-blue), 0px 0px 19.92px var(--color-primary-blue);
-  }
-
-  .tail {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 640px;
-    width: 100%;
-
-    display: grid;
-    place-items: center;
-
-    .tail-1 {
-      position: relative;
-      // height: 57.4vh;
-      height: 100%;
-      width: 4px;
-
-      background: linear-gradient(0deg, var(--color-primary-pink) 0%, var(--color-primary-blue) 77.6%);
-      filter: blur(1.5px);
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .tail-1 {
-      position: relative;
-      height: 57.4vh;
-      width: 4px;
-
-      background: linear-gradient(0deg, var(--color-primary-purple) 0%, var(--color-primary-blue) 77.6%) !important;
-      filter: blur(1.5px);
-    }
   }
 
   @media screen and (min-width: 1400px) {
