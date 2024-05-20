@@ -1,4 +1,4 @@
-# gugustinette-website
+# Gugustinette Website
 
 ## Build Setup
 
