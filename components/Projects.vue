@@ -2,7 +2,7 @@
   <div class="projects-wrapper">
     <div class="projects">
       <!-- World Where -->
-      <a class="project-card" href="https://worldwhere.gugustinette.com">
+      <a class="project-card" href="https://github.com/Gugustinette/WorldWhere" target="_blank">
         <img src="~/assets/projects/WorldWhere.png" alt="Project Image - WorldWhere" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
@@ -15,7 +15,7 @@
       </a>
 
       <!-- Eris -->
-      <a class="project-card" href="https://eris.gugustinette.com">
+      <a class="project-card" href="https://github.com/Gugustinette/eris" target="_blank">
         <img src="~/assets/projects/Eris.png" alt="Project Image - Eris" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
@@ -26,20 +26,20 @@
         </div>
       </a>
 
-      <!-- GusUI -->
-      <a class="project-card" href="https://gugustinette.com/gus-ui">
-        <img src="~/assets/projects/GusUI.png" alt="Project Image - GusUI" />
+      <!-- Nuxt Leaflet -->
+      <a class="project-card" href="https://gugustinette.github.io/Nuxt-Leaflet/" target="_blank">
+        <img src="~/assets/projects/Nuxt-Leaflet.png" alt="Project Image - Nuxt Leaflet" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
-          <h3>GusUI</h3>
+          <h3>Nuxt Leaflet</h3>
           <p>
-            NPM library wtih 30+ native web components.
+            Nuxt module to use Leaflet in Nuxt projects.
           </p>
         </div>
       </a>
 
       <!-- Flew -->
-      <a class="project-card" href="https://github.com/Gugustinette/flew">
+      <a class="project-card" href="https://github.com/Gugustinette/flew" target="_blank">
         <img src="~/assets/projects/Flew.png" alt="Project Image - Flew" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
