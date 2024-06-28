@@ -27,7 +27,7 @@
       </a>
 
       <!-- Nuxt Leaflet -->
-      <a class="project-card" href="https://gugustinette.github.io/Nuxt-Leaflet/" target="_blank">
+      <a class="project-card" href="https://leaflet.nuxtjs.org/" target="_blank">
         <img src="~/assets/projects/Nuxt-Leaflet.png" alt="Project Image - Nuxt Leaflet" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
