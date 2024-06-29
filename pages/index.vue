@@ -42,7 +42,6 @@
 </template>
 
 <script>
-
 export default {
     name: "IndexPage",
 }
@@ -53,44 +52,6 @@ export default {
 @font-face {
   font-family: 'Have Heart One';
   src: url('~/assets/fonts/Have-Heart/TTF/Have\ Heart\ One.ttf');
-}
-
-// Import font 'Open Sans' from assets folder
-@font-face {
-  font-family: 'Open Sans';
-  src: url('~/assets/fonts/Open-Sans/static/OpenSans/OpenSans-Regular.ttf');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('~/assets/fonts/Open-Sans/static/OpenSans/OpenSans-Bold.ttf');
-  font-weight: 600;
-}
-
-:root {
-  --color-background: #07000B;
-  --color-font: #F2F2F2;
-  --color-font-transparent: rgba(255, 255, 255, 0.15);
-  --color-font-grey: #BDBDBD;
-
-  --color-primary-pink: #F9466C;
-  --color-primary-purple: #8955C3;
-  --color-primary-blue: #495EF4;
-
-  --color-main-gradient: linear-gradient(164.71deg, var(--color-primary-pink) 3.52%, var(--color-primary-blue) 95.61%);
-}
-
-body {
-  background-color: var(--color-background);
-}
-
-* {
-  color: var(--color-font);
-  margin: 0;
-  padding: 0;
-
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
 }
 
 h2 {
