@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 // Import font 'Have Heart One' from assets folder
 @font-face {
   font-family: 'Have Heart One';
@@ -103,7 +103,7 @@ h2 {
     h1 {
       text-orientation: upright;
       writing-mode: vertical-rl;
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     #name {
