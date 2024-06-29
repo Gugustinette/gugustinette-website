@@ -2,7 +2,7 @@
     <main>
         <h1>Welcome to my <span>Blog</span></h1>
         <div class="articles">
-            <NuxtLink to="/blog/articles/test-article">Test Article</NuxtLink>
+            <NuxtLink to="/blog/articles/thoughts-about-games-on-the-web">Thoughts about games on the web</NuxtLink>
         </div>
     </main>
 </template>
