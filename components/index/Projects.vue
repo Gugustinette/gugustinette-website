@@ -2,7 +2,7 @@
   <div class="projects-wrapper">
     <div class="projects">
       <!-- World Where -->
-      <a class="project-card" href="https://github.com/Gugustinette/WorldWhere" target="_blank">
+      <a class="project-card" href="https://gugustinette.github.io/WorldWhere/" target="_blank">
         <img src="~/assets/projects/WorldWhere.png" alt="Project Image - WorldWhere" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
