@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 // Import font 'Have Heart One' from assets folder
 @font-face {
   font-family: 'Have Heart One';

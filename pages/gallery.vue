@@ -8,7 +8,7 @@
     </p>
     <div class="artworks-grid">
       <div v-for="artwork in artworks" :key="artwork.id" class="artwork-card">
-        <img :src="artwork.image" alt="Artwork" />
+        <NuxtImg :src="artwork.image" alt="Gus Artwork" />
         <div class="artwork-details">
           <a :href="artwork.artistLink" target="_blank">{{ artwork.artist }}</a>
           <p>{{ artwork.year }}</p>
@@ -96,7 +96,7 @@ const artworks = ref([
 artworks.value.reverse();
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 main {
   height: 100%;
   width: 100%;
@@ -106,7 +106,6 @@ main {
 
   h1 {
     padding: 0 1em;
-    font-size: 3em;
     margin-bottom: 0.4em;
     color: var(--color-font);
 

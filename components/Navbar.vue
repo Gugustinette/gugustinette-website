@@ -12,6 +12,12 @@
       <NuxtLink to="/gallery">Gallery
         <div class="glow-circle"></div>
       </NuxtLink>
+      <NuxtLink to="/music">Music
+        <div class="glow-circle"></div>
+      </NuxtLink>
+      <NuxtLink to="/blog">Blog
+        <div class="glow-circle"></div>
+      </NuxtLink>
     </nav>
   </div>
 </template>

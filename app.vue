@@ -27,6 +27,8 @@
   --color-primary-blue: #495EF4;
 
   --color-main-gradient: linear-gradient(164.71deg, var(--color-primary-pink) 3.52%, var(--color-primary-blue) 95.61%);
+
+  color: var(--color-font);
 }
 
 body {
@@ -34,11 +36,15 @@ body {
 }
 
 * {
-  color: var(--color-font);
   margin: 0;
   padding: 0;
 
   font-family: 'Sarala', sans-serif;
   font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 </style>
