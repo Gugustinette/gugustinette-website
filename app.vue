@@ -3,6 +3,16 @@
     <NuxtPage />
 </template>
 
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Gugustinette',
+  ogTitle: 'Gugustinette',
+  description: 'The personal website of Gugustinette.',
+  ogDescription: 'The personal website of Gugustinette.',
+  twitterCard: 'summary_large_image',
+});
+</script>
+
 <style lang="scss">
 // Import font 'Sarala' from assets folder
 @font-face {
