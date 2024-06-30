@@ -2,7 +2,7 @@
   <div class="projects-wrapper">
     <div class="projects">
       <!-- World Where -->
-      <a class="project-card" href="https://github.com/Gugustinette/WorldWhere" target="_blank">
+      <a class="project-card" href="https://gugustinette.github.io/WorldWhere/" target="_blank">
         <img src="~/assets/projects/WorldWhere.png" alt="Project Image - WorldWhere" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
@@ -15,7 +15,7 @@
       </a>
 
       <!-- Eris -->
-      <a class="project-card" href="https://github.com/Gugustinette/eris" target="_blank">
+      <a class="project-card" href="https://gugustinette.github.io/eris/" target="_blank">
         <img src="~/assets/projects/Eris.png" alt="Project Image - Eris" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
@@ -223,6 +223,12 @@ export default {
     .projects {
       max-height: 700px;
       max-width: 1200px;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .project-card-hover h3 {
+      color: var(--color-background);
     }
   }
 }

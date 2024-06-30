@@ -77,5 +77,11 @@ main {
             }
         }
     }
+
+    @media (prefers-color-scheme: light) {
+        .articles a::before {
+            background: #bbbbbbdb;
+        }
+    }
 }
 </style>

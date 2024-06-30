@@ -70,6 +70,12 @@ const isNavbarOpen = ref(false);
       transform: translateY(-11px) rotate(-45deg);
     }
   }
+
+  @media (prefers-color-scheme: light) {
+    div {
+      background: #b0b0b0;
+    }
+  }
 }
 
 nav {
@@ -78,7 +84,7 @@ nav {
   left: 100%;
   height: 0%;
   width: 0%;
-  backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(30%);
+  background: rgba(0, 0, 0, 0.85);
   border-radius: 100%;
   z-index: 1000;
 
@@ -156,6 +162,26 @@ nav {
     width: 100%;
     scale: 1;
     border-radius: 0;
+  }
+
+  /* Gets applied if supported only */
+  @supports (
+    (-webkit-backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(30%))
+    or
+    (backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(30%))
+  ) {
+    background: none;
+    backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(30%);
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: rgba(255, 255, 255, 0.913);
+
+    a {
+      &::before {
+        background: #bbbbbbdb;
+      }
+    }
   }
 }
 </style>

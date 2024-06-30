@@ -75,5 +75,17 @@ main.article-content {
         border: 1px solid var(--color-font-grey);
         width: 100%;
     }
+
+    @media (prefers-color-scheme: light) {
+        * {
+            color: var(--color-font);
+        }
+
+        ul {
+            li {
+                color: var(--color-font);
+            }
+        }
+    }
 }
 </style>

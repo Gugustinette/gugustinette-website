@@ -2,7 +2,7 @@
   <main>
     <h1>Welcome to the <span>Gallery</span></h1>
     <p>
-      Here you can all my original artworks as well as artists who made them.
+      Here you can find all my original artworks as well as artists who made them.
       <br />
       Feel free to explore and enjoy the art!
     </p>
