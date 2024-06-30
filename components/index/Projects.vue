@@ -15,7 +15,7 @@
       </a>
 
       <!-- Eris -->
-      <a class="project-card" href="https://github.com/Gugustinette/eris" target="_blank">
+      <a class="project-card" href="https://gugustinette.github.io/eris/" target="_blank">
         <img src="~/assets/projects/Eris.png" alt="Project Image - Eris" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
