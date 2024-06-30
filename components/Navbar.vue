@@ -70,6 +70,12 @@ const isNavbarOpen = ref(false);
       transform: translateY(-11px) rotate(-45deg);
     }
   }
+
+  @media (prefers-color-scheme: light) {
+    div {
+      background: #b0b0b0;
+    }
+  }
 }
 
 nav {
@@ -165,7 +171,17 @@ nav {
     (backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(30%))
   ) {
     background: none;
-    backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(30%)
+    backdrop-filter: blur(10px) saturate(180%) contrast(80%) brightness(30%);
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: rgba(255, 255, 255, 0.913);
+
+    a {
+      &::before {
+        background: #bbbbbbdb;
+      }
+    }
   }
 }
 </style>

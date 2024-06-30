@@ -127,5 +127,12 @@ export default {
       display: none;
     }
   }
+
+
+  @media (prefers-color-scheme: light) {
+    backdrop-filter:  none;
+    background: linear-gradient(201deg, #EAEAEA 77.4%, #C2C2C2 100%);
+    box-shadow: -8.60083px 22.4059px 48px rgba(43, 43, 43, 0.108), inset 2.14065px -5.57659px 5.97333px #BDBDBD, inset -2.14065px 5.57659px 5.97333px #F0F0F0;
+  }
 }
 </style>

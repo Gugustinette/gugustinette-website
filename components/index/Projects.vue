@@ -225,5 +225,11 @@ export default {
       max-width: 1200px;
     }
   }
+
+  @media (prefers-color-scheme: light) {
+    .project-card-hover h3 {
+      color: var(--color-background);
+    }
+  }
 }
 </style>

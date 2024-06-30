@@ -57,4 +57,18 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #F2F2F2;
+    --color-font: #07000B;
+    --color-font-transparent: rgba(0, 0, 0, 0.15);
+    --color-font-grey: #BDBDBD;
+  }
+}
 </style>
