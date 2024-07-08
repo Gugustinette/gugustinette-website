@@ -150,7 +150,7 @@ main {
         flex-direction: column;
         gap: 0.5em;
         top: 100%;
-        width: 100%;
+        width: calc(100% - 4em);
         padding: 1em;
         background:
           linear-gradient(
@@ -160,6 +160,8 @@ main {
             rgba(0, 0, 0, 0.2) 0%
           );
         transform: translateY(0);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
 
         transition: all 0.2s ease-in-out;
 
