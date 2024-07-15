@@ -3,6 +3,10 @@
 FROM oven/bun:1.1.20
 WORKDIR /app
 
+# Install curl
+USER root
+RUN apt-get update && apt-get install -y curl
+
 # Install dependencies
 COPY package.json bun.lockb /app/
 RUN bun install
