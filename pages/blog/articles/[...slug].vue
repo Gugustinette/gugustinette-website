@@ -4,6 +4,41 @@
     </main>
 </template>
 
+<script setup lang="ts">
+/**
+ * Select images from the content and display them in fullscreen when clicked
+ */
+const openImage = (src: string) => {
+    const image = document.createElement('img');
+    image.id = 'blog-fullscreen-image';
+    image.classList.add('blog-fullscreen-image');
+    image.onclick = () => document.body.removeChild(image);
+    image.src = src;
+    document.body.appendChild(image);
+};
+
+const handleImageClick = (event: MouseEvent) => {
+    const target = event.target as HTMLImageElement;
+    if (target.tagName === 'IMG' && target.id !== 'blog-fullscreen-image') {
+        openImage(target.src);
+    }
+};
+
+const handleKeydown = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+        const image = document.querySelector('#blog-fullscreen-image');
+        if (image) {
+            document.body.removeChild(image);
+        }
+    }
+};
+
+onMounted(() => {
+    document.addEventListener('click', handleImageClick);
+    document.addEventListener('keydown', handleKeydown);
+});
+</script>
+
 <style lang="scss">
 main.article-content {
     height: 100%;
@@ -14,12 +49,19 @@ main.article-content {
     overflow: hidden;
 
     h1 {
+        max-width: 90vw;
         color: var(--color-font);
         padding: 0 !important;
     }
 
     h2 {
+        max-width: 90vw;
         padding-top: 1em;
+    }
+
+    h3 {
+        max-width: 90vw;
+        padding: 1.2em 0;
     }
 
     * {
@@ -35,27 +77,36 @@ main.article-content {
     }
 
     ul {
-        padding: 2em;
+        padding: 0.9em 2em;
         margin: 0;
         display: flex;
         flex-direction: column;
         gap: 1em;
         width: 100%;
+        max-width: 80vw;
 
         li {
             font-size: 1.2em;
             color: var(--color-font-grey);
+        }
+
+        a {
+            color: var(--color-primary-pink);
+            text-decoration: none;
+            font-weight: bold;
         }
     }
 
     img {
         max-height: 300px;
         padding: 2em;
+        cursor: zoom-in;
     }
 
     p {
         font-size: 1.2em;
-        padding: 1em 0;
+        padding: 0.9em 0;
+        max-width: 80vw;
         a {
             color: var(--color-primary-pink);
             text-decoration: none;
@@ -76,6 +127,10 @@ main.article-content {
         width: 100%;
     }
 
+    iframe {
+        padding: 1em 0;
+    }
+
     @media (prefers-color-scheme: light) {
         * {
             color: var(--color-font);
@@ -87,5 +142,38 @@ main.article-content {
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        * {
+            max-width: 90vw;
+            width: 90%;
+        }
+
+        p:has(> img) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 90vw;
+                padding: 1em;
+            }
+        }
+    }
+}
+
+img.blog-fullscreen-image {
+    object-fit: contain;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    transition: opacity 0.3s;
+    cursor: pointer;
 }
 </style>
