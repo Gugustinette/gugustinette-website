@@ -9,5 +9,14 @@ export default defineNuxtConfig({
     },
   ],
 
-  modules: ["@nuxt/content", "@nuxt/image"]
+  modules: ["@nuxt/content", "@nuxt/image"],
+
+  content: {
+    highlight: {
+      theme: {
+        default: 'catppuccin-mocha',
+        dark: 'catppuccin-mocha',
+      }
+    },
+  }
 })

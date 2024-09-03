@@ -131,6 +131,14 @@ main.article-content {
         padding: 1em 0;
     }
 
+    pre {
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: var(--color-font);
+        border-radius: 0.5em;
+        overflow-x: auto;
+    }
+
     @media (prefers-color-scheme: light) {
         * {
             color: var(--color-font);
