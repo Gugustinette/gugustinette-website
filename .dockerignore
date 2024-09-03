@@ -1,0 +1,5 @@
+# Docker ignores
+node_modules
+.nuxt
+.output
+dist

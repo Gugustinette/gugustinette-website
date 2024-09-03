@@ -8,7 +8,7 @@
     </p>
     <div class="artworks-grid">
       <div v-for="artwork in artworks" :key="artwork.id" class="artwork-card">
-        <NuxtImg :src="artwork.image" alt="Gus Artwork" />
+        <NuxtImg placeholder :src="artwork.image" alt="Gus Artwork" />
         <div class="artwork-details">
           <a :href="artwork.artistLink" target="_blank">{{ artwork.artist }}</a>
           <p>{{ artwork.year }}</p>
@@ -89,6 +89,13 @@ const artworks = ref([
     artist: 'Erwan',
     artistLink: 'https://www.instagram.com/erwanchannel.art/',
     year: 2024,
+  },
+  {
+    id: 11,
+    image: '/artworks/nylae/gus-album.png',
+    artist: 'Nylae',
+    artistLink: 'https://www.instagram.com/nylae_art/',
+    year: 2024,
   }
 ]);
 
@@ -150,7 +157,7 @@ main {
         flex-direction: column;
         gap: 0.5em;
         top: 100%;
-        width: 100%;
+        width: calc(100% - 4em);
         padding: 1em;
         background:
           linear-gradient(
@@ -160,6 +167,8 @@ main {
             rgba(0, 0, 0, 0.2) 0%
           );
         transform: translateY(0);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
 
         transition: all 0.2s ease-in-out;
 
