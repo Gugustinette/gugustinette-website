@@ -38,14 +38,14 @@
         </div>
       </a>
 
-      <!-- Flew -->
-      <a class="project-card" href="https://github.com/Gugustinette/flew" target="_blank">
-        <img src="~/assets/projects/Flew.png" alt="Project Image - Flew" />
+      <!-- Fibbo -->
+      <a class="project-card" href="https://fibbojs.github.io/fibbo" target="_blank">
+        <img src="~/assets/projects/Fibbo.png" alt="Project Image - Fibbo" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
-          <h3>Flew</h3>
+          <h3>Fibbo</h3>
           <p>
-            Discord-like chat application.
+            A 2D and 3D web game engine, written in TypeScript.
           </p>
         </div>
       </a>
