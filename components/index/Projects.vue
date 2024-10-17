@@ -39,7 +39,7 @@
       </a>
 
       <!-- Fibbo -->
-      <a class="project-card" href="https://fibbojs.github.io/fibbo" target="_blank">
+      <a class="project-card" href="https://fibbo.dev" target="_blank">
         <img src="~/assets/projects/Fibbo.png" alt="Project Image - Fibbo" />
         <!-- Visible on hover -->
         <div class="project-card-hover">
