@@ -31,6 +31,7 @@ useSeoMeta({
   --color-font: #F2F2F2;
   --color-font-transparent: rgba(255, 255, 255, 0.15);
   --color-font-grey: #BDBDBD;
+  --color-font-grey-dark: #57505b;
 
   --color-primary-pink: #F9466C;
   --color-primary-purple: #8955C3;
@@ -69,6 +70,7 @@ h1 {
     --color-font: #07000B;
     --color-font-transparent: rgba(0, 0, 0, 0.15);
     --color-font-grey: #BDBDBD;
+    --color-font-grey-dark: #948e98;
   }
 }
 </style>

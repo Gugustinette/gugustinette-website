@@ -5,6 +5,16 @@
 </template>
 
 <script setup lang="ts">
+const article = useArticles().find((article) => article.slug === useRoute().params.slug[0]);
+
+onMounted(() => {
+    // Insert the date of the article into the document, after the title
+    const date = document.createElement('p');
+    date.textContent = article.date.toLocaleDateString();
+    date.classList.add('article-date');
+    document.querySelector('h1')?.insertAdjacentElement('afterend', date);
+});
+
 /**
  * Select images from the content and display them in fullscreen when clicked
  */
@@ -47,6 +57,14 @@ main.article-content {
     place-items: center;
     padding: 8em 0em;
     overflow: hidden;
+
+    .article-date {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: var(--color-font-grey-dark);
+        padding-top: 0;
+    }
 
     h1 {
         max-width: 90vw;

@@ -2,10 +2,17 @@
     <main>
         <h1>Welcome to my <span>Blog</span></h1>
         <div class="articles">
-            <NuxtLink to="/blog/articles/thoughts-about-games-on-the-web">Thoughts about games on the web</NuxtLink>
+            <NuxtLink v-for="article in articles" :key="article.id" :to="`/blog/articles/${article.slug}`">
+                <p class="article-title">{{ article.title }}</p>
+                <p class="article-date">{{ article.date.toLocaleDateString() }}</p>
+            </NuxtLink>
         </div>
     </main>
 </template>
+
+<script setup lang="ts">
+const articles = useArticles();
+</script>
 
 <style lang="scss">
 main {
@@ -32,6 +39,10 @@ main {
         gap: 1em;
 
         a {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
             position: relative;
             padding: 1em;
             margin-left: 5em;
@@ -74,6 +85,10 @@ main {
                 &::after {
                     width: 300px;
                 }
+            }
+
+            .article-date {
+                color: var(--color-font-grey-dark);
             }
         }
     }
