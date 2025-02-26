@@ -18,6 +18,5 @@ export default defineNuxtConfig({
         dark: 'catppuccin-mocha',
       }
     },
-    documentDriven: true,
-  }
+  },
 })

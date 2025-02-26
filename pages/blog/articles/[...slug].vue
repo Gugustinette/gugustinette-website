@@ -5,9 +5,15 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({ documentDriven: { page: false } });
+const router = useRouter();
 const article = useArticles().find((article) => article.slug === useRoute().params.slug[0]);
 
 onMounted(() => {
+    if (!article) {
+        router.push('/blog');
+        return;
+    }
     // Insert the date of the article into the document, after the title
     const date = document.createElement('p');
     date.textContent = article.date.toLocaleDateString();
