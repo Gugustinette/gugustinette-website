@@ -17,7 +17,7 @@ export function useArticles(): Article[] {
       id: 2,
       title: 'More thoughts about games on the web',
       slug: 'more-thoughts-about-games-on-the-web',
-      date: new Date('2025-04-24'),
+      date: new Date('2025-04-09'),
     },
   ].sort((a, b) => b.date.getTime() - a.date.getTime());
 }
