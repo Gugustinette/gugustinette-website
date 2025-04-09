@@ -85,7 +85,7 @@ main.article-content {
 
     h3 {
         max-width: 90vw;
-        padding: 1.2em 0;
+        padding-top: 1.2em;
     }
 
     * {

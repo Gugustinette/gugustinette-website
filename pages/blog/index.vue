@@ -36,7 +36,6 @@ main {
         max-width: 80%;
         display: flex;
         flex-direction: column;
-        gap: 1em;
 
         a {
             display: flex;
