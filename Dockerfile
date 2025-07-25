@@ -1,6 +1,6 @@
 # Use the official Bun image
 # See all versions at https://hub.docker.com/r/oven/bun/tags
-FROM oven/bun:1.1.20
+FROM oven/bun:1.2.19
 WORKDIR /app
 
 # Install curl
