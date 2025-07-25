@@ -8,7 +8,7 @@ USER root
 RUN apt-get update && apt-get install -y curl
 
 # Install dependencies
-COPY package.json bun.lockb /app/
+COPY package.json bun.lock /app/
 RUN bun install
 
 # Copy the rest of the app
