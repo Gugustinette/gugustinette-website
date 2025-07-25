@@ -1,13 +1,22 @@
 <template>
     <main class="article-content">
-        <ContentDoc />
+        <ContentRenderer v-if="markdown" :value="markdown" />
     </main>
 </template>
 
 <script setup lang="ts">
+import { ContentRenderer } from '#components';
+
 definePageMeta({ documentDriven: { page: false } });
 const router = useRouter();
-const article = useArticles().find((article) => article.slug === useRoute().params.slug[0]);
+const route = useRoute()
+// Find article by slug
+// @ts-ignore
+const article = useArticles().find((article) => article.slug === route.params.slug[0]);
+// Get data from the content collection
+const { data: markdown } = await useAsyncData(route.path, () => {
+  return queryCollection('content').path(route.path).first()
+})
 
 onMounted(() => {
     if (!article) {

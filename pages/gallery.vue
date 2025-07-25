@@ -96,6 +96,13 @@ const artworks = ref([
     artist: 'Nylae',
     artistLink: 'https://www.instagram.com/nylae_art/',
     year: 2024,
+  },
+  {
+    id: 12,
+    image: '/artworks/nylae/gus-album.png',
+    artist: 'Erwan',
+    artistLink: 'https://www.instagram.com/erwanchannel.art/',
+    year: 2025,
   }
 ]);
 

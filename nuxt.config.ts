@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2025-07-25',
   devtools: { enabled: true },
 
   components: [
@@ -12,11 +13,15 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/image"],
 
   content: {
-    highlight: {
-      theme: {
-        default: 'catppuccin-mocha',
-        dark: 'catppuccin-mocha',
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: 'catppuccin-mocha',
+            dark: 'catppuccin-mocha',
+          }
+        },
       }
-    },
+    }
   },
 })
