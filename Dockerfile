@@ -3,9 +3,11 @@
 FROM oven/bun:1.2.19
 WORKDIR /app
 
-# Install curl
+# Install curl, Python 3, and build essentials
 USER root
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && \
+    apt-get install -y curl python3 build-essential && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install dependencies
 COPY package.json bun.lock /app/
