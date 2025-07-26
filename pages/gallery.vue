@@ -99,7 +99,7 @@ const artworks = ref([
   },
   {
     id: 12,
-    image: '/artworks/nylae/gus-album.png',
+    image: '/artworks/erwan/gus-album-2.jpg',
     artist: 'Erwan',
     artistLink: 'https://www.instagram.com/erwanchannel.art/',
     year: 2025,
