@@ -1,0 +1,79 @@
+#sec_contact {
+    min-height: 70vh;
+    background-color: #273036;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: whitesmoke;
+    row-gap: 4vh;
+}
+
+#sec_contact div {
+    height: 100%;
+    width: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1vh;
+}
+
+#social_div {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.social_logo {
+    width: 8vw;
+    transition: 0.4s;
+}
+
+.social_logo:hover {
+    transform: rotate(5deg);
+    transition: 0.4s;
+}
+
+#transition_sec_contact_1 {
+    background-image: url(../../content/svg/sec_contact/wave_up.svg);
+    background-size: cover;
+    color: whitesmoke;
+    background-color: whitesmoke;
+}
+
+#transition_sec_contact_2 {
+    background-color: #273036;
+    height: 5vh;
+}
+
+#social_div_3 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+@media screen and (max-aspect-ratio: 9/9){
+    #sec4 {
+        row-gap: 0;
+        font-size: 6vw;
+    }
+
+    #social_div {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .social_logo {
+        width: 25vw;
+    }
+    
+    #social_div_3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

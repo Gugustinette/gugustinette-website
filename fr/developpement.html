@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Gugustinette Website</title>
+        <link rel="stylesheet" href="../CSS/style_all.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/navbar/style_navbar.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/navbar/style_navbar_clicked.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_sec1.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_sec2.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_card.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_transition_sec.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_other.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_contact.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/font/bebasneue/style.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/font/geosanslight/style.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/dev/style_dev.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/dev/style_dev_structure.css">
+        <link rel="shortcut icon" href="../content/Icones/gugustinette.ico" type="image/x-icon">
+    </head>
+    <body>
+        <nav>
+            <ul class = "ul2" id = "ul2">
+                <li class = "logoNavLI" id = "logoNavLI"><img src="../content/Images/Galery/PDP_Gugustinette_ChonchonDraw.jpg" class = "logoNavIMG" id = "logoNavIMG" alt="Logo Gugustinette"></li>
+                <li id = "FR_button"><a href="#">FR</a></li>
+                <li id = "EN_button"><a href="../en/developement.html">EN</a></li>
+            </ul>
+            <ul class = "ul1" id = "ul1">
+                <li><a href = "#transition_sec_contact_1">Contact</a></li>
+                <li><a href = "a_propos.html">À Propos</a></li>
+                <li><a href = "galerie.html">Galerie</a></li>
+                <li><a href = "#">Code</a></li>
+                <li><a href = "musique.html">Musique</a></li>
+                <li><a href = "index.html">Accueil</a></li>
+                <li class = "mobileLogo" onclick = "mobileNav()" id = "mobileLogo"><a><img src = "../content/Images/Struct/navbar_menu.png" class = "img_mobile_logo" alt = "Logo Menu Navbar"></img></a></li>
+            </ul>
+        </nav>
+        <div class="sec1" id="sec1_dev">
+            <div class = "sec1_sub_dark">
+                <p id = "title">Gugustinette</p>
+                <p id = "sub_title">Développement</p>
+                <a href = "#transition_sec2_1">
+                    <img class = "img_titleArrow" src = "../content/Images/Struct/arrow_white.png" id = "title_arrow" alt ="Flèche animée vers le bas">
+                </a>
+            </div>
+        </div>
+        <div class = "transition_sec" id = "transition_sec2_1">
+            <p class="title_sec2" style="color: whitesmoke;">Projets Personnels</p>
+        </div>
+        <div class = "sec2" id = "sec2">
+            <div class="project_card card_left">
+                <div class="project_card_media">
+                    <img src="../content/Images/Dev/breakAllSquares.png" alt="Break All Squares Project Image" class="project_card_img">
+                </div>
+                <div class="project_card_text">
+                    <div class="project_card_text_title_div">
+                        <p class="project_card_title">Break All Squares</p>
+                        <a href="https://github.com/Gugustinette/breakallsquares">
+                            <img src="../content/Images/Struct/link_white.png" alt="Link for project" class="project_card_link_img">
+                        </a>
+                    </div>
+                    <hr class="project_card_line"> 
+                    <p class="project_card_description">Un jeu de grande ampleur basé sur une matrice de 633x633 chunks.</p>
+                </div>
+            </div>
+            <div class="project_card card_right">
+                <div class="project_card_media">
+                    <img src="../content/Images/Dev/dawnToYou.png" alt="Dawn To You Project Image" class="project_card_img">
+                </div>
+                <div class="project_card_text">
+                    <div class="project_card_text_title_div">
+                        <p class="project_card_title">Dawn To You</p>
+                        <a href="https://github.com/Gugustinette/">
+                            <img src="../content/Images/Struct/link_white.png" alt="Link for project" class="project_card_link_img">
+                        </a>
+                    </div>
+                    <hr class="project_card_line"> 
+                    <p class="project_card_description">Un jeu d'aventure à travers combats, mouvements dynamiques et deuil.</p>
+                </div>
+            </div>
+            <div class="project_card card_left">
+                <div class="project_card_media">
+                </div>
+                <div class="project_card_text">
+                    <div class="project_card_text_title_div">
+                        <p class="project_card_title">Multi-Mural Encryption</p>
+                        <a href="https://github.com/Gugustinette/multi-mural-encryption">
+                            <img src="../content/Images/Struct/link_white.png" alt="Link for project" class="project_card_link_img">
+                        </a>
+                    </div>
+                    <hr class="project_card_line"> 
+                    <p class="project_card_description">Méthode d'encryptage symétrique.</p>
+                </div>
+            </div>
+        </div>
+        <div class = "transition_sec" id = "transition_sec2_2"></div>
+        <div class = "transition_sec" id = "transition_sec4_1">
+            <p class="title_sec2" style="color: whitesmoke;">Compétences</p>
+        </div>
+        <div class = "sec2" id = "sec4">
+            <div class = "sec4_content_div">
+                <p class="sec4_title">Langages</p>
+                <hr class="sec4_title_line">
+                <div class="sec4_content_logo">
+                    <img src="../content/Images/Dev/languages/html.png" alt="Logo HTML" class="sec4_logo">
+                    <img src="../content/Images/Dev/languages/css.png" alt="Logo CSS" class="sec4_logo">
+                    <img src="../content/Images/Dev/languages/javascript.png" alt="Logo JavaScript" class="sec4_logo">
+                    <img src="../content/Images/Dev/languages/c.png" alt="Logo C" class="sec4_logo">
+                    <img src="../content/Images/Dev/languages/c_sharp.png" alt="Logo C#" class="sec4_logo">
+                    <img src="../content/Images/Dev/languages/java.png" alt="Logo Java" class="sec4_logo">
+                    <img src="../content/Images/Dev/languages/python.png" alt="Logo Python" class="sec4_logo">
+                    <img src="../content/Images/Dev/languages/dart.png" alt="Logo Dart" class="sec4_logo">
+                </div>
+            </div>
+            <div class = "sec4_content_div">
+                <p class="sec4_title">Moteurs et Frameworks</p>
+                <hr class="sec4_title_line">
+                <div class="sec4_content_logo">
+                    <img src="../content/Images/Dev/engines/flutter.png" alt="Logo Flutter" class="sec4_logo">
+                    <img src="../content/Images/Dev/engines/unity.png" alt="Logo Unity" class="sec4_logo">
+                    <img src="../content/Images/Dev/engines/node_js.png" alt="Logo NodeJS" class="sec4_logo">
+                </div>
+            </div>
+        </div>
+        <div class = "transition_sec" id = "transition_sec4_2"></div>
+        <div class = "transition_sec" id = "transition_sec3_1">
+            <p class="title_sec2" style="color: whitesmoke;">Projets Professionels</p>
+        </div>
+        <div class = "sec2" id = "sec3">
+            <div class="project_card card_left">
+                <div class="project_card_media">
+                </div>
+                <div class="project_card_text">
+                    <p class="project_card_title">À venir</p>
+                    <hr class="project_card_line">  
+                    <p class="project_card_description">Bientôt plus...</p>
+                </div>
+            </div>
+        </div>
+        <div class = "transition_sec" id = "transition_sec3_2"></div>
+        <div class = "transition_sec" id = "transition_sec_contact_1">
+            <p class = "title_sec2">Contact</p>
+        </div>
+        <div class = "sec2" id = "sec_contact">
+            <div>
+                <p>Mail :</p>
+                <a href="mailto:mercier.augustin@outlook.fr" class="clickable_text_a">
+                    <p>mercier.augustin@outlook.fr</p>
+                </a>
+            </div>
+            <div>
+                <p>Réseaux sociaux :</p>
+                <div id="social_div">
+                    <a href="https://twitter.com/gugustinette">
+                        <img src="../content/Images/Social/twitter.png" alt="Twitter Logo" class="social_logo">
+                    </a>
+                    <a href="https://www.instagram.com/gugustinette/">
+                        <img src="../content/Images/Social/instagram.png" alt="Instagram Logo" class="social_logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/augustin-mercier-75b746168/">
+                        <img src="../content/Images/Social/linkedin.png" alt="LinkedIn Logo" class="social_logo">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCu723mRuBxUpGvc9xCNMfeQ/featured">
+                        <img src="../content/Images/Social/youtube.png" alt="Youtube Logo" class="social_logo">
+                    </a>
+                </div>
+            </div>
+            <div id="social_div_3">
+                <div>
+                    <p>Github :</p>
+                    <a href="https://github.com/Gugustinette">
+                        <img src="../content/Images/Social/github.png" alt="Github Logo" class="social_logo">
+                    </a>
+                </div>
+                <div>
+                    <p>SoundCloud :</p>
+                    <a href="https://soundcloud.com/gugustinette">
+                        <img src="../content/Images/Social/soundcloud.png" alt="Soundcloud Logo" class="social_logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class = "transition_sec" id = "transition_sec_contact_2"></div>
+    </body>
+    <script src="../JS/script_index.js"></script>
+</html>

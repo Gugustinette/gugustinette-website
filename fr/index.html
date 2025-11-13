@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Gugustinette Website</title>
+        <link rel="stylesheet" href="../CSS/style_all.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/navbar/style_navbar.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/navbar/style_navbar_clicked.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/index/style_index.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/index/style_index_structure.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_sec1.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_sec2.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_transition_sec.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_class_other.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/class/style_contact.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/font/bebasneue/style.css">
+        <link rel="stylesheet" type = "text/css" href = "../CSS/font/geosanslight/style.css">
+        <link rel="shortcut icon" href="../content/Icones/gugustinette.ico" type="image/x-icon">
+    </head>
+    <body>
+        <nav>
+            <ul class = "ul2" id = "ul2">
+                <li class = "logoNavLI" id = "logoNavLI"><img src="../content/Images/Galery/PDP_Gugustinette_ChonchonDraw.jpg" class = "logoNavIMG" id = "logoNavIMG" alt="Logo Gugustinette"></li>
+                <li id = "FR_button"><a href="#">FR</a></li>
+                <li id = "EN_button"><a href="../en/index.html">EN</a></li>
+            </ul>
+            <ul class = "ul1" id = "ul1">
+                <li><a href = "#transition_sec_contact_1">Contact</a></li>
+                <li><a href = "a_propos.html">À Propos</a></li>
+                <li><a href = "galerie.html">Galerie</a></li>
+                <li><a href = "developpement.html">Code</a></li>
+                <li><a href = "musique.html">Musique</a></li>
+                <li><a href = "#">Accueil</a></li>
+                <li class = "mobileLogo" onclick = "mobileNav()" id = "mobileLogo"><a><img src = "../content/Images/Struct/navbar_menu.png" class = "img_mobile_logo" alt = "Logo Menu Navbar"></img></a></li>
+            </ul>
+        </nav>
+        <div class="sec1">
+            <div class = "sec1_sub">
+                <p id = "title">Gugustinette</p>
+                <p id = "sub_title">Augustin MERCIER</p>
+                <a href = "#transition_sec2_1">
+                    <img class = "img_titleArrow" src = "../content/Images/Struct/arrow.png" id = "title_arrow" alt ="Flèche animée vers le bas">
+                </a>
+            </div>
+        </div>
+        <div class = "transition_sec" id = "transition_sec2_1">
+            <p class = "title_sec2">Musiques</p>
+        </div>
+        <div class = "sec2" id = "sec2">
+            <a href="musique.html">
+                <div>
+                    <p>Palladium</p>
+                </div>
+            </a>
+            <iframe width="80%" height="90%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/574697508&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <a href="musique.html">
+                <div>
+                    <p>Hero</p>
+                </div>
+            </a>
+            <iframe width="80%" height="90%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/669187097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <a href="musique.html">
+                <div>
+                    <p>Heaven</p>
+                </div>
+            </a>
+            <iframe width="80%" height="90%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/948760303&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+        <div class = "transition_sec" id = "transition_sec2_2"></div>
+        <div class = "transition_sec" id = "transition_sec3_1">
+            <p class = "title_sec2">Code</p>
+        </div>
+        <div class = "sec2" id = "sec3">
+            <a href="developpement.html" class="sec3_a_left">
+                <div class="sec3_elem">
+                    <p>Break All Squares</p>
+                    <p>Jeu web de grande ampleur</p>
+                </div>
+            </a>
+            <a href="developpement.html" class="sec3_a_right">
+                <div class="sec3_elem">
+                    <p>Dawn To You</p>
+                    <p>Jeu d'aventure</p>
+                </div>
+            </a>
+            <a href="developpement.html" class="sec3_a_left">
+                <div class="sec3_elem">
+                    <p>Multi-Mural Encryption</p>
+                    <p>Méthode d'encryptage symétrique</p>
+                </div>
+            </a>
+        </div>
+        <div class = "transition_sec" id = "transition_sec3_2"></div>
+        <div class = "transition_sec" id = "transition_sec_contact_1">
+            <p class = "title_sec2">Contact</p>
+        </div>
+        <div class = "sec2" id = "sec_contact">
+            <div>
+                <p>Mail :</p>
+                <a href="mailto:mercier.augustin@outlook.fr" class="clickable_text_a">
+                    <p>mercier.augustin@outlook.fr</p>
+                </a>
+            </div>
+            <div>
+                <p>Réseaux sociaux :</p>
+                <div id="social_div">
+                    <a href="https://twitter.com/gugustinette">
+                        <img src="../content/Images/Social/twitter.png" alt="Twitter Logo" class="social_logo">
+                    </a>
+                    <a href="https://www.instagram.com/gugustinette/">
+                        <img src="../content/Images/Social/instagram.png" alt="Instagram Logo" class="social_logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/augustin-mercier-75b746168/">
+                        <img src="../content/Images/Social/linkedin.png" alt="LinkedIn Logo" class="social_logo">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCu723mRuBxUpGvc9xCNMfeQ/featured">
+                        <img src="../content/Images/Social/youtube.png" alt="Youtube Logo" class="social_logo">
+                    </a>
+                </div>
+            </div>
+            <div id="social_div_3">
+                <div>
+                    <p>Github :</p>
+                    <a href="https://github.com/Gugustinette">
+                        <img src="../content/Images/Social/github.png" alt="Github Logo" class="social_logo">
+                    </a>
+                </div>
+                <div>
+                    <p>SoundCloud :</p>
+                    <a href="https://soundcloud.com/gugustinette">
+                        <img src="../content/Images/Social/soundcloud.png" alt="Soundcloud Logo" class="social_logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class = "transition_sec" id = "transition_sec_contact_2"></div>
+    </body>
+    <script src="../JS/script_index.js"></script>
+</html>

@@ -1,0 +1,100 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'GeosansLight Regular';
+}
+@keyframes arrowmove {
+    0%   {top: 5vh;}
+    25%  {top: 10vh;}
+    100% {top: 5vh;}
+}
+
+#sec1_dev {
+    background-image: url(../../content/Images/Struct/gugus_moon_bg.png);
+    background-position: top left;
+}
+
+#sec2 {
+    background-color: #0066FF;
+}
+
+#sec3 {
+    background-color: #C62368;
+}
+
+#sec4 {
+    background-color: #009473;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sec4_content_div {
+    height: 100%;
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 2fr 0.1fr 6fr;
+}
+
+.sec4_content_div:hover .sec4_title_line{
+    width: 70%;
+    transition: 0.4s;
+}
+
+.sec4_title_line {
+    width: 60%;
+    color: whitesmoke;
+    transition: 0.4s;
+}
+
+.sec4_title {
+    color: whitesmoke;
+}
+
+.sec4_content_logo {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sec4_logo {
+    width: 6vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    transition: 0.4s;
+}
+
+.sec4_logo:hover {
+    width: 7vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.4s;
+}
+
+
+
+@media screen and (max-aspect-ratio: 9/9){
+    #sec4 {
+        grid-template-columns: 1fr;
+    }
+    .sec4_content_logo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sec4_logo {
+        margin-top: 10vh;
+        width: 18vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    .sec4_logo:hover {
+        width: 20vw;
+    }
+}

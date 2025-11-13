@@ -1,0 +1,73 @@
+#sec1_galerie {
+    background: url("../../content/Images/Struct/gugus_space_bg.png");
+    background-position: center;
+}
+
+#sec2 {
+    display: grid;
+    align-items: center;
+    background-color: #FF6F61;
+}
+
+.sec2_card_div {
+    width: min-content;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.sec2_card_div IMG {
+    border: solid 4px;
+    border-radius: 10px;
+    width: 30vw;
+    transition: 0.4s;
+}
+
+.sec2_card_div IMG:hover {
+    width: 40vw;
+    transition: 0.4s;
+}
+
+.sec2_card_div p {
+    justify-self: right;
+    font-size: 1vw;
+    color: grey;
+}
+
+.sec2_card_div p a {
+    color: inherit;
+}
+
+.sec2_card_left {
+    margin-left: 8vw;
+    justify-self: left;
+}
+
+.sec2_card_right {
+    margin-right: 8vw;
+    justify-self: right;
+}
+
+@media screen and (max-aspect-ratio: 9/9) {
+    .sec2_card_div IMG {
+        width: 80vw;
+    }
+    
+    .sec2_card_div IMG:hover {
+        width: 90vw;
+    }
+
+    .sec2_card_div p {
+        font-size: 3vw;
+    }
+
+    .sec2_card_left {
+        margin-left: 0;
+        justify-self: center;
+    }
+    
+    .sec2_card_right {
+        margin-right: 0;
+        justify-self: center;
+    }
+}

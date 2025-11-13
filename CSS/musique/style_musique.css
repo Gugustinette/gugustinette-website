@@ -1,0 +1,24 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'GeosansLight Regular';
+}
+@keyframes arrowmove {
+    0%   {top: 5vh;}
+    25%  {top: 10vh;}
+    100% {top: 5vh;}
+}
+
+#sec1_musique {
+    background-image: url(../../content/Images/Struct/gugus_sunset_bg.png);
+}
+
+#sec2 {
+    background-color: #FCAF3C;
+    min-height: 80vh;
+}
+
+#sec3 {
+    background-color: #FF0066;
+    min-height: 80vh;
+}

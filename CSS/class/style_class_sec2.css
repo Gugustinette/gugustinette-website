@@ -1,0 +1,36 @@
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.sec2{
+    width : 100%;
+    height : auto;
+    min-height: 50vh;
+    display: grid;
+    font-size: 2.5vw;
+    font-family: inherit;
+    z-index: 1;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+}
+.title_sec2 {
+    text-align: center;
+    align-self: end;
+    font-family: inherit;
+    font-size: 10vw;
+    z-index: 1;
+}
+
+@media screen and (max-aspect-ratio: 9/9){
+    .title_sec2 {
+        font-size: 15vw;
+    }
+    .sec2 {
+        font-size: 5vw;
+    }
+}

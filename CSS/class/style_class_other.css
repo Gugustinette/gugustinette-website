@@ -1,0 +1,16 @@
+.clickable_text_a {
+    color: whitesmoke;
+    font-size: inherit;
+    transition: 0.4s;
+}
+
+.clickable_text_a:hover {
+    font-size: 2.8vw;
+    transition: 0.4s;
+}
+
+@media screen and (max-aspect-ratio: 9/9){
+    .clickable_text_a:hover {
+        font-size: 6vw;
+    }
+}

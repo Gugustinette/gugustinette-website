@@ -1,0 +1,80 @@
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes arrowmove {
+    0%   {top: 5vh;}
+    25%  {top: 10vh;}
+    100% {top: 5vh;}
+}
+
+.sec1 {
+    height: auto;
+    width: 100vw;
+    background-image: url(../../content/Images/Struct/gugus_plain_bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.sec1_sub{
+    width : 100%;
+    height : 100vh;
+    display: grid;
+    grid-template-rows: 5fr 1fr 3fr;
+    justify-items: center;
+    background-image: url(../../content/svg/sec_1/wave_down.svg);
+    background-position: center;
+    background-size: cover;
+}
+.sec1_sub_dark {
+    width : 100%;
+    height : 100vh;
+    display: grid;
+    grid-template-rows: 5fr 1fr 3fr;
+    justify-items: center;
+    background-image: url(../../content/svg/sec_1/wave_down_dark.svg);
+    background-position: center;
+    background-size: cover;
+}
+.sec1_sub_dark p{
+    color: whitesmoke;
+}
+#title {
+    align-self: end;
+    font-family: 'GeosansLight Regular';
+    font-size: 10vw;
+    z-index: 1;
+    animation-name: "fadeIn";
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+#sub_title {
+    align-self: start;
+    font-family: 'GeosansLight Regular';
+    font-size: 3vw;
+    z-index: 1;
+    animation-name: "fadeIn";
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+IMG.img_titleArrow {
+    position: relative;
+    width: 9vh;
+    animation-name: arrowmove;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    align-self: center;
+}
+@media screen and (max-aspect-ratio: 9/9){
+    #title {
+        font-size: 15vw;
+    }
+    #sub_title {
+        font-size: 5vw;
+    }
+}

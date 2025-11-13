@@ -1,0 +1,145 @@
+#sec2 {
+    background-color: #00cba9;
+    grid-template-columns: 1fr 2fr;
+}
+#sec2 a {
+    height: 100%;
+    width: 80%;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#sec2 a:hover {
+    width: 85%;
+    height: 105%;
+    transition: 0.4s;
+}
+
+#sec2 a div {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+}
+
+#sec2 a div p {
+    font-family: inherit;
+    text-align: center;
+    color: black;
+}
+
+#sec3 {
+    min-height: 100vh;
+    background-color: #000b76;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#sec3 a {
+    text-decoration: none;
+    display: grid;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    font-family: inherit;
+    border-radius: 10px;
+    background: linear-gradient(95deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 36%, rgba(0,0,0,1) 37%, rgba(245,245,245,1) 37.5%, rgba(245,245,245,1) 100%);
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
+#sec3 a:hover {
+    height: 110%;
+    width: 45%;
+    transition: 0.4s;
+}
+
+#sec3 div p {
+    font-family: inherit;
+    text-align: center;
+    color: black;
+}
+
+.sec3_elem {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sec3_a_left {
+    margin-left: 5vw;
+    justify-self: left;
+}
+.sec3_a_right {
+    margin-right: 5vw;
+    justify-self: right;
+}
+
+
+#sec4 {
+    min-height: 70vh;
+    background-color: #273036;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    color: whitesmoke;
+    row-gap: 4vh;
+}
+
+#sec4 div {
+    height: 100%;
+    width: 60%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1vh;
+}
+
+@media screen and (max-aspect-ratio: 9/9){
+    #sec2 {
+        grid-template-columns: 1fr;
+        row-gap: 4vh;
+    }
+
+    #sec3 {
+        min-height: 120vh;
+        row-gap: 10vh;
+    }
+
+    #sec3 a {
+        text-decoration: none;
+        width: 80%;
+        background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 36%, rgba(0,0,0,1) 37%, rgba(245,245,245,1) 37.5%, rgba(245,245,245,1) 100%);
+    }
+
+    #sec3 a:hover {
+        height: 105%;
+        width: 85%;
+        transition: 0.4s;
+    }
+
+    .sec3_elem {
+        grid-template-columns: 1fr;
+    }
+
+    .sec3_a_left {
+        margin-left: 0;
+        justify-self: center;
+    }
+    .sec3_a_right {
+        margin-right: 0;
+        justify-self: center;
+    }
+
+    #sec4 {
+        row-gap: 0;
+        font-size: 6vw;
+    }
+}

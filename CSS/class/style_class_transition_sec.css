@@ -1,0 +1,10 @@
+.transition_sec {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: bottom;
+}

@@ -1,0 +1,123 @@
+.project_card {
+    display: grid;
+    width: 70%;
+    height: auto;
+    min-height: 30vh;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    background-color: #001122;
+    border-radius: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    transition: 0.4s;
+}
+
+.card_left {
+    justify-self: left;
+}
+.card_right {
+    justify-self: right;
+}
+
+.project_card_media {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.project_card_img {
+    width: 12vw;
+    border: solid 4px;
+    border-radius: 10px;
+}
+
+.project_card_text {
+    height: 100%;
+    width: 90%;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.1fr 2fr;
+}
+
+.project_card_title {
+    color: whitesmoke;
+    font-size: 3vw;
+    justify-self: left;
+}
+
+.project_card_text_title_div {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20fr 1fr;
+}
+
+.project_card_link_img {
+    width: 3vw;
+    justify-self: right;
+    transition: 0.4s;
+}
+
+.project_card_link_img:hover {
+    transform: rotate(10deg);
+    transition: 0.4s;
+}
+
+.project_card_line {
+    width:50%;
+    text-align:left;
+    margin-left:0;
+    transition: 0.4s;
+}
+
+.project_card:hover .project_card_line {
+    width:55%;
+    transition: 0.4s;
+}
+
+.project_card_description {
+    color: grey;
+}
+
+.project_card_audio {
+    width: 100%;
+}
+
+
+@media screen and (max-aspect-ratio: 9/9){
+    .project_card {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 4fr;
+        justify-self: center;
+    }
+    .project_card:hover {
+        height: max-content;
+        width: 90%;
+    }
+    .project_card_img {
+        width: 30vw;
+        margin-top: 2vh;
+    }
+    .project_card_title {
+        font-size: 6vw;
+    }
+    .card_left {
+        justify-self: center;
+    }
+    .card_right {
+        justify-self: center;
+    }
+    .project_card_link_img {
+        width: 8vw;
+    }
+}
