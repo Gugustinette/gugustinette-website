@@ -1,0 +1,41 @@
+* {
+    margin : 0;
+    padding : 0;
+    font-family: 'SF Pro';
+    color: whitesmoke;
+}
+
+body {
+    overflow-x: hidden;
+    background: #121212;
+}
+
+@keyframes slow_appear { 
+    from { 
+        opacity: 0; 
+    } 
+    to { 
+        opacity: 1; 
+    }  
+}
+
+@keyframes slow_appear_width { 
+    from { 
+        opacity: 0; 
+        width: 0; 
+    } 
+    to { 
+        opacity: 1; 
+        width: 1; 
+    }  
+}
+
+.slow_appear {
+    animation-name: 'slow_appear';
+    animation-duration: 3s;
+}
+
+.slow_appear_width {
+    animation-name: 'slow_appear_width';
+    animation-duration: 3s;
+}

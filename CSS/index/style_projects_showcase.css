@@ -1,0 +1,87 @@
+.project_showcase {
+    width: 20vw;
+    height: 25vw;
+    background-size: cover;
+    border: solid 1px grey;
+    display: grid;
+    align-items: flex-end;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.project_showcase img {
+    height: 100%;
+}
+
+.project_showcase_info {
+    transform: translateY(20vw);
+    background-color: #3f3f3f;
+    height: 70%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 0.1fr 1fr 1fr;
+    align-items: center;
+    transition: 0.3s;
+    border-top: solid 1px grey;
+}
+
+.project_showcase_info * {
+    margin-left: 1vw;
+    width: 90%;
+}
+
+.project_showcase_info a {
+    justify-self: center;
+    background-color: #08fdd8;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 4vw;
+    display: grid;
+    align-items: center;
+}
+
+.project_showcase_info a:hover img {
+    transform: rotate(180deg) translateY(10px);
+    transition: 0.2s;
+}
+
+.project_showcase_info a img {
+    width: 50%;
+    height: 50%;
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+.project_showcase:hover .project_showcase_info {
+    transform: translateY(0vw);
+    transition: 0.3s;
+}
+
+
+#project_1 {
+    background-image: url(../../content/Images/Dev/breakAllSquares.png);
+}
+#project_2 {
+    background-image: url(../../content/Images/Dev/findUrNeeds.png);
+}
+#project_3 {
+    background-image: url(../../content/Images/Dev/dawnToYou.png);
+}
+
+@media screen and (max-aspect-ratio: 9/9) {
+    .project_showcase {
+        width: 45vw;
+        height: 60vw;
+    }
+
+    .project_showcase_info {
+        transform: translateY(30vw);
+    }
+
+    .project_showcase_info a {
+        height: 10vw;
+        width: 10vw;
+        border-radius: 10vw;
+        justify-items: center;
+    }
+}

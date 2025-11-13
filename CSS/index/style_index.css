@@ -1,0 +1,232 @@
+#sec_index {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../content/Images/Struct/gugus_moon_bg.png);
+    background-position: center top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    overflow: hidden;
+}
+
+#sec_index_maindiv {
+    margin-top: -20vh;
+    height: 200%;
+    width: 200%;
+    transform: rotate(10deg);
+    background-color: rgb(0, 0, 0, 0.8);
+    display: grid;
+    justify-items: left;
+    align-items: center;
+}
+
+#sec_index_subdiv {
+    transform: rotate(-10deg);
+    margin-left: 10vw;
+    margin-bottom: 40vh;
+    height: 50vh;
+    width: 50vw;
+}
+
+h1 {
+    font-size: 7vw;
+}
+
+#sec_index_subdiv hr {
+    width: 70%;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-size: 2vw;
+    font-family: 'SF Mono';
+    color: gray;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+#sec_projects {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+}
+
+#sec_projects_text * {
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+}
+
+#sec_projects_title {
+    padding-top: 10vh;
+    color: #08fdd8;
+}
+
+#sec_projects_showcase {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+#sec_skills {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #121212;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    justify-items: right;
+    padding-bottom: 10vh;
+}
+
+#sec_skills_text * {
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+}
+
+#sec_skills_title {
+    padding-top: 10vh;
+    color: #ff0b56;
+}
+
+#sec_contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#sec_contact_socials {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    margin-left: 5vw;
+}
+
+#sec_contact_socials h1 {
+    color:rgb(252, 246, 78);
+}
+
+#sec_contact_socials div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#sec_contact_socials div a {
+    width: 8vw;
+    height: 8vw;
+    transition: 0.2s;
+}
+
+#sec_contact_socials div a:hover {
+    transform: rotate(5deg);
+    transition: 0.2s;
+}
+
+#sec_contact_socials div a img {
+    width: 100%;
+}
+
+#sec_contact_other {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#logo_gugustinette {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(../../content/Images/Galery/PDP_Gugustinette_ChonchonDraw.jpg);
+    background-size: contain;
+    border-radius: 20vw;
+    border: solid 6px black;
+    display: grid;
+    justify-items: right;
+    align-items: flex-end;
+}
+
+#logo_pen {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 3vw;
+    background-image: url(../../content/Images/Struct/logo_pen.png);
+    background-size: contain;
+    margin-bottom: 1vh;
+    margin-right: 2vw;
+    background-color: black;
+    transition: 0.2s;
+}
+
+#logo_pen:hover {
+    transform: rotate(10deg);
+    transition: 0.2s;
+}
+
+
+@media screen and (max-aspect-ratio: 9/9) {
+    #sec_index {
+        grid-template-columns: 1fr 10fr;
+        background-position: right;
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+    
+    #sec_index_subdiv hr {
+        width: 100%;
+    }
+    
+    h2 {
+        font-size: 5vw;
+    }
+    
+    h3 {
+        font-size: 4vw;
+        font-family: 'SF Mono';
+        color: gray;
+    }
+    
+    h4 {
+        font-size: 4vw;
+    }
+
+    #sec_projects_showcase {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2vh;
+    }
+
+    #sec_skills {
+        grid-template-rows: 1fr 3fr;
+    }
+
+    #sec_contact_socials div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #sec_contact_socials div a {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #logo_gugustinette {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #logo_pen {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 8vw;
+    }
+}

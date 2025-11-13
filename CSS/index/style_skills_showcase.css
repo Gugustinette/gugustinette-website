@@ -1,0 +1,52 @@
+#sec_skills_showcase {
+    width: 95%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skill_showcase {
+    min-height: 85vh;
+    border-right: solid 1px grey;
+    display: grid;
+    justify-items: center;
+    row-gap: 2vh;
+    grid-template-rows: 0.5fr 0.1fr 5fr;
+}
+
+.skill_showcase h4 {
+    color: #ff0b56;
+    font-family: 'SF Mono';
+}
+
+.skill_showcase hr{
+    color: #ff0b56;
+    width: 80%;
+    height: min-content;
+}
+
+.skill_showcase_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill_showcase_list img {
+    padding-top: 5vh;
+    width: 6vw;
+}
+
+@media screen and (max-aspect-ratio: 9/9) {
+    #sec_skills_showcase {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 5vh;
+    }
+
+    .skill_showcase_noborder_mobile {
+        border-right: 0;
+    }
+
+    .skill_showcase_list img {
+        width: 12vw;
+    }
+}
