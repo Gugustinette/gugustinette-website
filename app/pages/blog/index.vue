@@ -4,14 +4,26 @@
         <div class="articles">
             <NuxtLink v-for="article in articles" :key="article.id" :to="`/blog/articles/${article.slug}`">
                 <p class="article-title">{{ article.title }}</p>
-                <p class="article-date">{{ article.date.toLocaleDateString() }}</p>
+                <p class="article-date">{{ article.formattedDate }}</p>
             </NuxtLink>
         </div>
     </main>
 </template>
 
 <script setup lang="ts">
-const articles = useArticles();
+const rawArticles = useArticles();
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
+
+const articles = rawArticles.map((article) => ({
+    ...article,
+    formattedDate: dateFormatter.format(article.date),
+}));
 </script>
 
 <style lang="scss">

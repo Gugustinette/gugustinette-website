@@ -1,6 +1,6 @@
 # Use the official Bun image
 # See all versions at https://hub.docker.com/r/oven/bun/tags
-FROM oven/bun:1.2.19
+FROM oven/bun:1.3
 WORKDIR /app
 
 # Install curl, Python 3, and build essentials

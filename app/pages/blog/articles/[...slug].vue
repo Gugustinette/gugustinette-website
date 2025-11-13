@@ -10,6 +10,13 @@ import { ContentRenderer } from '#components';
 definePageMeta({ documentDriven: { page: false } });
 const router = useRouter();
 const route = useRoute()
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
 // Find article by slug
 // @ts-ignore
 const article = useArticles().find((article) => article.slug === route.params.slug[0]);
@@ -25,7 +32,7 @@ onMounted(() => {
     }
     // Insert the date of the article into the document, after the title
     const date = document.createElement('p');
-    date.textContent = article.date.toLocaleDateString();
+    date.textContent = dateFormatter.format(article.date);
     date.classList.add('article-date');
     document.querySelector('h1')?.insertAdjacentElement('afterend', date);
 });
