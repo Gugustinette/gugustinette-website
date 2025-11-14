@@ -73,45 +73,6 @@ h2 {
   overflow-x: hidden;
 }
 
-.section-1 {
-  width: 100%;
-  // https://getwallpapers.com/wallpaper/full/3/f/f/18044.jpg
-  // background-image: url('~/assets/Background.png');
-  background-size: cover;
-  background-position: center;
-
-  h1 {
-    align-self: flex-end;
-    width: 100%;
-    margin: 0.8rem 1rem;
-    color: var(--color-font-transparent);
-
-    font-weight: 700;
-    font-size: 5rem;
-    line-height: 4rem;
-  }
-
-  #title {
-    text-align: right;
-
-    max-width: 500px;
-  }
-
-  // Media Queries
-  @media (max-width: 1100px) {
-    // Make text vertical but letter in horizontal
-    h1 {
-      text-orientation: upright;
-      writing-mode: vertical-rl;
-      font-size: 3rem;
-    }
-
-    #name {
-      writing-mode: vertical-lr;
-    }
-  }
-}
-
 .section-2 {
   display: flex;
   flex-direction: column;
