@@ -103,6 +103,13 @@ const artworks = ref([
     artist: 'Erwan',
     artistLink: 'https://www.instagram.com/erwanchannel.art/',
     year: 2025,
+  },
+  {
+    id: 13,
+    image: '/artworks/perseith/friendship.png',
+    artist: 'Perseith',
+    artistLink: 'https://perseith.crd.co/',
+    year: 2026,
   }
 ]);
 
